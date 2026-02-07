@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" fill="none">
+  <rect x="2" y="4" width="32" height="32" rx="8" fill="white"/>
+  <path d="M14 14h8v-4h-8v4zm0 12h8v-4h-8v4zm-4-4h16v-4H10v4z" fill="#1e3a5f"/>
+  <text x="42" y="28" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="white">
+    Oz Health
+  </text>
+</svg>
