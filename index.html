@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OzEHR | Modern EHR Built for College Health</title>
+    <meta name="description" content="OzEHR is a modern, clean EHR for college health." />
+    <style>
+      :root {
+        --bg: #f7f4ee;
+        --surface: #ffffff;
+        --ink: #0c1f1f;
+        --muted: #4b6161;
+        --line: rgba(12,31,31,0.12);
+        --brand: #0f766e;
+        --brand-2: #185b57;
+        --accent: #f4e4a8;
+        --mint: #d8f0d9;
+        --font: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+        --serif: ui-serif,"Iowan Old Style","New York",Georgia,serif;
+      }
+      *,*::before,*::after { box-sizing: border-box; }
+      body { margin:0; font-family:var(--font); color:var(--ink); line-height:1.5;
+        background: radial-gradient(900px 400px at 15% -10%,rgba(15,118,110,.15),transparent 60%),
+                    radial-gradient(800px 400px at 80% 10%,rgba(244,228,168,.3),transparent 60%),
+                    var(--bg); }
+      a { color:inherit; text-decoration:none; }
+      .w { width:min(960px,calc(100% - 40px)); margin:0 auto; }
+
+      /* Nav */
+      nav { position:sticky; top:0; z-index:10; border-bottom:1px solid rgba(12,31,31,.08);
+        background:rgba(247,244,238,.7); backdrop-filter:blur(12px); }
+      .nav-inner { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+      .logo { display:inline-flex; align-items:center; gap:10px; }
+      .logo-mark { width:32px; height:32px; border-radius:10px;
+        background: radial-gradient(18px 18px at 30% 25%,rgba(244,228,168,.9),transparent 60%),
+                    linear-gradient(160deg,var(--brand),var(--brand-2));
+        box-shadow:0 8px 20px rgba(15,118,110,.2); }
+      .logo-text { font-family:var(--serif); font-weight:750; font-size:16px; }
+      .logo-sub { display:block; font-size:11px; color:var(--muted); font-family:var(--font); font-weight:400; }
+      .nav-links { display:flex; gap:8px; }
+      .nav-links a { font-size:14px; font-weight:600; color:var(--muted); padding:8px 10px; border-radius:10px; }
+      .nav-links a:hover { color:var(--ink); background:rgba(255,255,255,.6); }
+
+      /* Buttons */
+      .btn { display:inline-flex; align-items:center; padding:11px 18px; border-radius:12px; font-weight:600; font-size:14px; border:1px solid transparent; cursor:pointer; }
+      .btn-p { background:linear-gradient(180deg,var(--brand),var(--brand-2)); color:#fff; box-shadow:0 10px 25px rgba(15,118,110,.2); }
+      .btn-s { background:rgba(255,255,255,.7); border-color:var(--line); }
+      .btn:hover { transform:translateY(-1px); }
+
+      /* Hero */
+      .hero { padding:60px 0 40px; }
+      .hero h1 { font-family:var(--serif); font-weight:700; font-size:clamp(36px,4.5vw,56px);
+        letter-spacing:-.02em; line-height:1.05; margin:12px 0 14px; }
+      .hero p { color:var(--muted); font-size:17px; max-width:52ch; margin:0 0 20px; }
+      .pill { display:inline-flex; align-items:center; gap:8px; padding:6px 12px; border-radius:999px;
+        background:rgba(255,255,255,.55); border:1px solid var(--line); color:var(--muted); font-size:13px; }
+      .pill .dot { width:8px; height:8px; border-radius:50%; background:var(--brand); }
+      .btn-row { display:flex; gap:10px; flex-wrap:wrap; }
+
+      /* Features */
+      .features { padding:40px 0; }
+      .features h2 { font-family:var(--serif); font-weight:700; font-size:clamp(26px,3vw,36px);
+        letter-spacing:-.01em; margin:0 0 8px; }
+      .features > .w > p { color:var(--muted); margin:0 0 24px; }
+      .grid3 { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+      .card { padding:20px; border-radius:16px; background:rgba(255,255,255,.75);
+        border:1px solid rgba(12,31,31,.1); box-shadow:0 14px 40px rgba(12,31,31,.05); }
+      .card-icon { width:40px; height:40px; border-radius:12px; display:grid; place-items:center;
+        background:rgba(15,118,110,.12); border:1px solid rgba(15,118,110,.18); color:var(--brand-2); margin-bottom:10px; }
+      .card h3 { font-size:16px; font-weight:700; margin:0 0 6px; }
+      .card p { margin:0; color:var(--muted); font-size:14px; }
+
+      /* CTA */
+      .cta { padding:40px 0 60px; }
+      .cta-box { border-radius:20px; padding:32px; text-align:center;
+        background: radial-gradient(600px 200px at 50% 0%,rgba(244,228,168,.45),transparent 60%),
+                    rgba(255,255,255,.7);
+        border:1px solid rgba(12,31,31,.1); box-shadow:0 18px 55px rgba(12,31,31,.08); }
+      .cta-box h2 { font-family:var(--serif); font-weight:700; font-size:clamp(24px,3vw,32px); margin:0 0 8px; }
+      .cta-box p { color:var(--muted); margin:0 0 18px; }
+
+      /* Footer */
+      footer { padding:28px 0; border-top:1px solid rgba(12,31,31,.1); background:rgba(255,255,255,.3); }
+      .foot-inner { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+      footer small { color:var(--muted); font-size:12px; }
+      footer a:hover { color:var(--ink); }
+
+      /* Placeholder banner */
+      .placeholder-banner { background:var(--accent); text-align:center; padding:10px; font-size:13px; font-weight:600; color:var(--brand-2); }
+
+      @media (max-width:700px) {
+        .nav-links { display:none; }
+        .grid3 { grid-template-columns:1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="placeholder-banner">Placeholder — content coming soon</div>
+
+    <nav>
+      <div class="w nav-inner">
+        <a class="logo" href="#">
+          <span class="logo-mark"></span>
+          <span>
+            <span class="logo-text">OzEHR</span>
+            <span class="logo-sub">College health, upgraded</span>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="#">Product</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+        </div>
+        <a class="btn btn-p" href="#">Request a demo</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="w">
+          <span class="pill"><span class="dot"></span> Built for campus care</span>
+          <h1>A modern EHR for college health.</h1>
+          <p>Scheduling, intake, charting, messaging, e-prescribing, labs, billing, and a student portal in one clean platform.</p>
+          <div class="btn-row">
+            <a class="btn btn-p" href="#">Request a demo</a>
+            <a class="btn btn-s" href="#">See pricing</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="w">
+          <h2>Everything a campus clinic needs.</h2>
+          <p>Designed around the real day-to-day: high volume, walk-ins, mental health, immunizations, and tight campus IT requirements.</p>
+          <div class="grid3">
+            <div class="card">
+              <div class="card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7 3v3M17 3v3M4 9h16M6 6h12a2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Scheduling</h3>
+              <p>Walk-ins, appointments, waitlists, and multi-location schedules.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 3h6M7 6h10a2 2 0 012 2v12a2 2 0 01-2 2H7a2 2 0 01-2-2V8a2 2 0 012-2zM8 12h8M8 16h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Intake &amp; Forms</h3>
+              <p>Conditional logic, signatures, and uploads — students finish on their phone.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 4h8M8 8h8M8 12h8M6 3h12a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <h3>Clinical Workflow</h3>
+              <p>Fast charting, templates, e-prescribing, orders, and results.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="w">
+          <div class="cta-box">
+            <h2>Ready to see OzEHR?</h2>
+            <p>Tell us about your campus clinic and we'll tailor the demo.</p>
+            <div class="btn-row" style="justify-content:center">
+              <a class="btn btn-p" href="#">Request a demo</a>
+              <a class="btn btn-s" href="#">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="w foot-inner">
+        <small>&copy; <script>document.write(new Date().getFullYear())</script> OzEHR. All rights reserved.</small>
+        <small><a href="#">Privacy</a> &middot; <a href="#">Terms</a></small>
+      </div>
+    </footer>
+  </body>
+</html>
