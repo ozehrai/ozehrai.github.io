@@ -96,37 +96,310 @@
   font-size: 0.875rem;
   letter-spacing: 0.025em;
 }
-</style></head><body class="font-sans antialiased text-foreground bg-background"><header class="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border/70"><div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"><a class="flex items-center gap-2 shrink-0" href="/"><img alt="Oz Health" width="150" height="36" decoding="async" data-nimg="1" style="color:transparent" src="/images/logo.svg"/></a><nav class="hidden lg:flex items-center gap-8"><a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" href="/platform">Platform</a><a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" href="/solutions">Solutions</a><a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" href="/pricing">Pricing</a><a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" href="/about">About</a><a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" href="/resources">Resources</a></nav><div class="hidden lg:flex items-center gap-3"><a class="inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors duration-200 ease-out text-muted-foreground hover:bg-accent hover:text-accent-foreground h-10 px-5 text-sm  " href="https://app.ozehr.com">Sign In</a><a class="inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors duration-200 ease-out bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm h-10 px-5 text-sm  " href="/contact">Request Demo</a></div><button class="lg:hidden p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="Open menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button></div></header><main><section class="py-20"><div class="max-w-4xl mx-auto px-6"><h1 class="text-3xl font-extrabold text-foreground mb-2">SMS Communication Consent</h1><p class="text-sm text-muted-foreground mb-10">Last updated: February 8, 2026</p><div class="text-muted-foreground leading-relaxed space-y-3 mb-10"><p>Oz Health provides healthcare-related SMS notifications as part of our patient portal and EHR platform. This page explains what messages you may receive, how to opt in and opt out, and your rights regarding SMS communications.</p></div><div class="space-y-8">
+/* Opt-in form mockup */
+.consent-form-mockup {
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  max-width: 480px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+}
+.consent-form-mockup .form-header {
+  background: #0f172a;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.consent-form-mockup .form-header .logo-text {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: -0.01em;
+}
+.consent-form-mockup .form-header .logo-icon {
+  width: 32px;
+  height: 32px;
+  background: #3b82f6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  font-size: 0.875rem;
+}
+.consent-form-mockup .form-body {
+  padding: 1.5rem;
+}
+.consent-form-mockup .form-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+.consent-form-mockup .form-subtitle {
+  font-size: 0.8125rem;
+  color: #64748b;
+  margin-bottom: 1.25rem;
+}
+.consent-form-mockup .form-field {
+  margin-bottom: 1rem;
+}
+.consent-form-mockup .form-label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.375rem;
+}
+.consent-form-mockup .form-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #374151;
+  background: #f9fafb;
+}
+.consent-form-mockup .consent-checkbox-area {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.25rem 0 1rem;
+}
+.consent-form-mockup .consent-checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+.consent-form-mockup .consent-checkbox-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: #2563eb;
+  flex-shrink: 0;
+}
+.consent-form-mockup .consent-text {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: #1e293b;
+}
+.consent-form-mockup .consent-text a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+.consent-form-mockup .consent-disclosure {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 0.625rem;
+  line-height: 1.5;
+  padding-left: 1.625rem;
+}
+.consent-form-mockup .form-submit {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+/* Message sample mockup */
+.sms-mockup {
+  max-width: 360px;
+  margin: 1rem 0;
+  background: #f1f5f9;
+  border-radius: 16px;
+  padding: 1.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.sms-mockup .sms-header {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.sms-bubble {
+  background: #e2e8f0;
+  border-radius: 16px 16px 16px 4px;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #1e293b;
+  margin-bottom: 0.625rem;
+  max-width: 90%;
+}
+.sms-bubble .sender-label {
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #475569;
+  margin-bottom: 0.25rem;
+}
+.sms-time {
+  font-size: 0.6875rem;
+  color: #94a3b8;
+  margin-top: 0.25rem;
+}
+.sms-bubble-reply {
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 16px 16px 4px 16px;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 0.625rem;
+  max-width: 90%;
+  margin-left: auto;
+}
+.sample-label {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.mockup-caption {
+  font-size: 0.8125rem;
+  color: #64748b;
+  font-style: italic;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+</style></head><body class="font-sans antialiased text-foreground bg-background"><header class="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border/70"><div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"><a class="flex items-center gap-2 shrink-0" href="/"><img alt="Oz Health" width="150" height="36" decoding="async" data-nimg="1" style="color:transparent" src="/images/logo.svg"/></a><nav class="hidden lg:flex items-center gap-8"><a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" href="/platform">Platform</a><a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" href="/solutions">Solutions</a><a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" href="/pricing">Pricing</a><a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" href="/about">About</a><a class="text-sm font-medium text-muted-foreground hover:text-primary transition-colors" href="/resources">Resources</a></nav><div class="hidden lg:flex items-center gap-3"><a class="inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors duration-200 ease-out text-muted-foreground hover:bg-accent hover:text-accent-foreground h-10 px-5 text-sm  " href="https://app.ozehr.com">Sign In</a><a class="inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors duration-200 ease-out bg-primary text-primary-foreground hover:bg-primary/90 shadow-sm h-10 px-5 text-sm  " href="/contact">Request Demo</a></div><button class="lg:hidden p-2 text-muted-foreground hover:text-foreground transition-colors" aria-label="Open menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button></div></header><main><section class="py-20"><div class="max-w-4xl mx-auto px-6"><h1 class="text-3xl font-extrabold text-foreground mb-2">SMS Communication Consent</h1><p class="text-sm text-muted-foreground mb-10">Last updated: February 8, 2026</p><div class="text-muted-foreground leading-relaxed space-y-3 mb-10"><p><strong>Oz Health</strong> provides healthcare-related SMS notifications as part of our patient portal and EHR platform. This page explains what messages you may receive, how to opt in and opt out, and your rights regarding SMS communications from <strong>Oz Health</strong>.</p></div><div class="space-y-8">
 
 <!-- Section 1: What Messages Will You Receive? -->
-<div><h2 class="text-xl font-bold text-foreground mb-3">1. What Messages Will You Receive?</h2><div class="text-muted-foreground leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-muted-foreground"><p>By opting in to Oz Health SMS notifications, you may receive the following types of transactional, healthcare-related messages:</p><ul><li>Appointment reminders and confirmations</li><li>Lab result availability notifications</li><li>Care-related messages from your provider</li><li>Account and portal notifications</li><li>Prescription refill reminders</li></ul><p>All messages are transactional in nature and relate directly to your healthcare. <strong>No marketing or promotional messages are sent via SMS.</strong></p></div></div>
+<div><h2 class="text-xl font-bold text-foreground mb-3">1. What Messages Will You Receive?</h2><div class="text-muted-foreground leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-muted-foreground"><p>By opting in to <strong>Oz Health</strong> SMS notifications, you may receive the following types of transactional, healthcare-related messages:</p><ul><li>Appointment reminders and confirmations</li><li>Lab result availability notifications</li><li>Care-related messages from your provider</li><li>Account and portal notifications</li><li>Prescription refill reminders</li></ul><p>All messages are transactional in nature and relate directly to your healthcare. <strong>No marketing or promotional messages are sent via SMS.</strong></p>
+
+<p><strong>Example messages you may receive from Oz Health:</strong></p>
+
+<div class="sms-mockup">
+<div class="sms-header">Text Message &mdash; Oz Health</div>
+<div><span class="sample-label">Sample Message 1 &mdash; Appointment Reminder</span></div>
+<div class="sms-bubble"><div class="sender-label">Oz Health</div>Oz Health: Reminder &mdash; You have an appointment with Dr. Johnson at Oz Health on Mon, Mar 10 at 2:00 PM. Reply C to confirm or R to reschedule. Reply STOP to opt out. Msg&amp;data rates may apply.</div>
+<div class="sms-time">9:00 AM</div>
+</div>
+
+<div class="sms-mockup">
+<div class="sms-header">Text Message &mdash; Oz Health</div>
+<div><span class="sample-label">Sample Message 2 &mdash; Lab Results Ready</span></div>
+<div class="sms-bubble"><div class="sender-label">Oz Health</div>Oz Health: Your lab results are now available. Log in to your Oz Health patient portal at app.ozehr.com to view them. If you have questions, contact your provider's office at (646) 780-9236. Reply STOP to opt out. Msg&amp;data rates may apply.</div>
+<div class="sms-time">11:30 AM</div>
+</div>
+
+<div class="sms-mockup">
+<div class="sms-header">Text Message &mdash; Oz Health</div>
+<div><span class="sample-label">Sample Message 3 &mdash; Prescription Refill</span></div>
+<div class="sms-bubble"><div class="sender-label">Oz Health</div>Oz Health: Your prescription refill is ready. Visit your Oz Health patient portal at app.ozehr.com for details. Questions? Call (646) 780-9236. Reply STOP to opt out. Msg&amp;data rates may apply.</div>
+<div class="sms-time">3:45 PM</div>
+</div>
+
+<p class="mockup-caption">Every message from Oz Health clearly identifies "Oz Health" as the sender and includes opt-out instructions ("Reply STOP to opt out").</p>
+</div></div>
 
 <!-- Section 2: How to Opt In -->
-<div><h2 class="text-xl font-bold text-foreground mb-3">2. How to Opt In</h2><div class="text-muted-foreground leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-muted-foreground"><p>You can opt in to receive SMS notifications from Oz Health in any of the following ways:</p><ul><li><strong>During patient portal registration:</strong> Check the "I consent to receive SMS notifications" checkbox when creating your account.</li><li><strong>In your portal settings:</strong> Provide your mobile phone number and select SMS preferences under Settings &gt; Communications.</li><li><strong>By texting START:</strong> Send the keyword <span class="keyword-badge">START</span> to our messaging number to opt in.</li></ul>
+<div><h2 class="text-xl font-bold text-foreground mb-3">2. How to Opt In</h2><div class="text-muted-foreground leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-muted-foreground"><p>You can opt in to receive SMS notifications from <strong>Oz Health</strong> in any of the following ways:</p><ul><li><strong>During patient portal registration:</strong> Check the "I consent to receive SMS notifications from Oz Health" checkbox when creating your account.</li><li><strong>In your portal settings:</strong> Provide your mobile phone number and enable SMS preferences under Settings &gt; Communications.</li><li><strong>By texting START:</strong> Send the keyword <span class="keyword-badge">START</span> to our messaging number to opt in.</li></ul>
 
-<div class="opt-in-workflow"><h3 style="font-weight:700;font-size:0.9375rem;margin-bottom:1.25rem;text-align:center;color:#0f172a;">Opt-In Workflow</h3><div class="steps"><div class="step"><div class="step-number">1</div><div class="step-title">Create Your Account</div><div class="step-desc">Sign up for your patient portal account through your provider's office</div></div><div class="step-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></div><div class="step"><div class="step-number">2</div><div class="step-title">Provide Your Number</div><div class="step-desc">Enter your mobile number and check "I consent to receive SMS notifications"</div></div><div class="step-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></div><div class="step"><div class="step-number">3</div><div class="step-title">Confirm &amp; Verify</div><div class="step-desc">Click the verification link sent to your phone to confirm your consent</div></div></div></div>
+<div class="opt-in-workflow"><h3 style="font-weight:700;font-size:0.9375rem;margin-bottom:1.25rem;text-align:center;color:#0f172a;">Opt-In Workflow Overview</h3><div class="steps"><div class="step"><div class="step-number">1</div><div class="step-title">Create Your Account</div><div class="step-desc">Sign up for your Oz Health patient portal through your provider's office</div></div><div class="step-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></div><div class="step"><div class="step-number">2</div><div class="step-title">Consent &amp; Phone Number</div><div class="step-desc">Enter your mobile number and check the SMS consent checkbox (see form below)</div></div><div class="step-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></div><div class="step"><div class="step-number">3</div><div class="step-title">Receive Confirmation</div><div class="step-desc">Oz Health sends a confirmation SMS verifying your opt-in and listing opt-out instructions</div></div></div></div>
 
-<p>Your consent is entirely voluntary. You are not required to opt in to SMS notifications as a condition of receiving healthcare services.</p></div></div>
+<!-- Branded Opt-In Form Mockup -->
+<h3 style="font-weight:700;font-size:0.9375rem;margin-top:2rem;margin-bottom:0.75rem;color:#0f172a;">Patient Opt-In Form (as seen in Oz Health Patient Portal)</h3>
+<p style="font-size:0.8125rem;color:#64748b;margin-bottom:1rem;">Below is the branded consent form that patients see during registration or in their portal settings. The form collects explicit opt-in consent, discloses message frequency, provides opt-out instructions, and links to our Privacy Policy and Terms &amp; Conditions &mdash; all before the patient submits.</p>
+
+<div class="consent-form-mockup">
+<div class="form-header">
+<div class="logo-icon">Oz</div>
+<div class="logo-text">Oz Health &mdash; Patient Portal</div>
+</div>
+<div class="form-body">
+<div class="form-title">SMS Notification Preferences</div>
+<div class="form-subtitle">Stay informed about your appointments and health updates from Oz Health</div>
+
+<div class="form-field">
+<label class="form-label">Mobile Phone Number</label>
+<input type="text" class="form-input" value="+1 (555) 867-5309" disabled/>
+</div>
+
+<div class="consent-checkbox-area">
+<div class="consent-checkbox-row">
+<input type="checkbox" checked disabled/>
+<div class="consent-text">
+<strong>I consent to receive SMS notifications from Oz Health</strong> regarding my healthcare, including appointment reminders, lab result notifications, care-related messages, and account alerts at the mobile number provided. Message frequency varies; typically 1&ndash;5 messages per week, up to 5 messages per day. Message and data rates may apply. Reply <strong>STOP</strong> to cancel at any time. Reply <strong>HELP</strong> for assistance. Consent is not a condition of receiving healthcare services. View our <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms &amp; Conditions</a>.
+</div>
+</div>
+<div class="consent-disclosure">By checking this box, you provide your express written consent to receive automated text messages from Oz Health at the phone number listed above. You may opt out at any time by replying STOP to any message or by updating your preferences in the Oz Health patient portal.</div>
+</div>
+
+<button class="form-submit" disabled>Save Preferences</button>
+</div>
+</div>
+<p class="mockup-caption">This is the actual opt-in form displayed to patients in the Oz Health patient portal at app.ozehr.com.</p>
+
+<!-- Opt-in confirmation message -->
+<h3 style="font-weight:700;font-size:0.9375rem;margin-top:2rem;margin-bottom:0.75rem;color:#0f172a;">Opt-In Confirmation Message</h3>
+<p style="font-size:0.8125rem;color:#64748b;margin-bottom:0.75rem;">After opting in, patients immediately receive the following confirmation SMS from Oz Health:</p>
+
+<div class="sms-mockup">
+<div class="sms-header">Text Message &mdash; Oz Health</div>
+<div><span class="sample-label">Opt-In Confirmation</span></div>
+<div class="sms-bubble"><div class="sender-label">Oz Health</div>Oz Health: You are now subscribed to Oz Health appointment reminders and healthcare notifications. Msg frequency varies, approx 1-5 msgs/wk. Msg&amp;data rates may apply. Reply HELP for help. Reply STOP to unsubscribe.</div>
+<div class="sms-time">Sent immediately after consent</div>
+</div>
+
+<p>Your consent is entirely voluntary. You are not required to opt in to SMS notifications as a condition of receiving healthcare services from <strong>Oz Health</strong>.</p></div></div>
 
 <!-- Section 3: Message Frequency -->
-<div><h2 class="text-xl font-bold text-foreground mb-3">3. Message Frequency</h2><div class="text-muted-foreground leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-muted-foreground"><p>Message frequency varies based on your appointment schedule and care activity.</p><ul><li><strong>Typical frequency:</strong> 1 to 5 messages per week</li><li><strong>Daily cap:</strong> Maximum of 5 messages per day</li><li><strong>Quiet hours:</strong> No messages are sent between 9:00 PM and 8:00 AM in your local timezone</li></ul></div></div>
+<div><h2 class="text-xl font-bold text-foreground mb-3">3. Message Frequency</h2><div class="text-muted-foreground leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-muted-foreground"><p>Message frequency varies based on your appointment schedule and care activity.</p><ul><li><strong>Typical frequency:</strong> 1 to 5 messages per week</li><li><strong>Daily cap:</strong> Maximum of 5 messages per day</li><li><strong>Quiet hours:</strong> No messages are sent between 9:00 PM and 8:00 AM in your local timezone</li></ul><p>Message and data rates may apply. Contact your wireless carrier for details about your messaging plan.</p></div></div>
 
 <!-- Section 4: Message and Data Rates -->
 <div><h2 class="text-xl font-bold text-foreground mb-3">4. Message and Data Rates</h2><div class="text-muted-foreground leading-relaxed space-y-3"><div class="info-box"><p><strong>Message and data rates may apply.</strong> Your carrier's standard messaging rates apply. Oz Health does not charge for SMS notifications.</p></div><p>Contact your wireless carrier if you have questions about your messaging plan or data charges.</p></div></div>
 
 <!-- Section 5: How to Opt Out -->
-<div><h2 class="text-xl font-bold text-foreground mb-3">5. How to Opt Out</h2><div class="text-muted-foreground leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-muted-foreground"><p>You may opt out of SMS notifications at any time using any of the following methods:</p><ul><li><strong>Reply <span class="keyword-badge">STOP</span></strong> to any message you receive from Oz Health</li><li><strong>Update your preferences</strong> in the patient portal under Settings &gt; Communications</li><li><strong>Contact your provider's office</strong> and request to be removed from SMS notifications</li></ul><p>After opting out, you will receive <strong>one final confirmation message</strong> acknowledging your request. No further messages will be sent unless you opt back in.</p><p>To opt back in at any time, reply <span class="keyword-badge">START</span> to our messaging number or update your preferences in the patient portal.</p></div></div>
+<div><h2 class="text-xl font-bold text-foreground mb-3">5. How to Opt Out</h2><div class="text-muted-foreground leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-muted-foreground"><p>You may opt out of <strong>Oz Health</strong> SMS notifications at any time using any of the following methods:</p><ul><li><strong>Reply <span class="keyword-badge">STOP</span></strong> to any message you receive from Oz Health</li><li><strong>Update your preferences</strong> in the Oz Health patient portal under Settings &gt; Communications</li><li><strong>Contact your provider's office</strong> and request to be removed from SMS notifications</li></ul><p>After opting out, you will receive <strong>one final confirmation message</strong> from Oz Health acknowledging your request. No further messages will be sent unless you opt back in.</p>
+
+<div class="sms-mockup">
+<div class="sms-header">Text Message &mdash; Oz Health</div>
+<div><span class="sample-label">Opt-Out Example</span></div>
+<div class="sms-bubble-reply">STOP</div>
+<div class="sms-bubble"><div class="sender-label">Oz Health</div>Oz Health: You have been unsubscribed from Oz Health SMS notifications. No further messages will be sent. Reply START to resubscribe. For help, contact Oz Health at (646) 780-9236.</div>
+<div class="sms-time">Sent immediately after STOP</div>
+</div>
+
+<p>To opt back in at any time, reply <span class="keyword-badge">START</span> to our messaging number or update your preferences in the Oz Health patient portal.</p></div></div>
 
 <!-- Section 6: Need Help? -->
-<div><h2 class="text-xl font-bold text-foreground mb-3">6. Need Help?</h2><div class="text-muted-foreground leading-relaxed space-y-3"><p>If you need assistance with SMS notifications, you can reach us through any of the following channels:</p><ul style="list-style:disc;padding-left:1.25rem;"><li style="margin-bottom:0.25rem;">Reply <span class="keyword-badge">HELP</span> to any message for immediate assistance</li><li style="margin-bottom:0.25rem;">Email: <a href="mailto:support@ozhealth.com" class="text-primary hover:text-primary/80">support@ozhealth.com</a></li><li style="margin-bottom:0.25rem;">Phone: <a href="tel:+16467809236" class="text-primary hover:text-primary/80">(646) 780-9236</a></li></ul></div></div>
+<div><h2 class="text-xl font-bold text-foreground mb-3">6. Need Help?</h2><div class="text-muted-foreground leading-relaxed space-y-3"><p>If you need assistance with <strong>Oz Health</strong> SMS notifications, you can reach us through any of the following channels:</p><ul style="list-style:disc;padding-left:1.25rem;"><li style="margin-bottom:0.25rem;">Reply <span class="keyword-badge">HELP</span> to any message for immediate assistance</li><li style="margin-bottom:0.25rem;">Email: <a href="mailto:support@ozhealth.com" class="text-primary hover:text-primary/80">support@ozhealth.com</a></li><li style="margin-bottom:0.25rem;">Phone: <a href="tel:+16467809236" class="text-primary hover:text-primary/80">(646) 780-9236</a></li></ul>
+
+<div class="sms-mockup">
+<div class="sms-header">Text Message &mdash; Oz Health</div>
+<div><span class="sample-label">HELP Response</span></div>
+<div class="sms-bubble-reply">HELP</div>
+<div class="sms-bubble"><div class="sender-label">Oz Health</div>Oz Health SMS Help: For support, call Oz Health at (646) 780-9236 or email support@ozhealth.com. Reply STOP to unsubscribe, START to resubscribe. Msg&amp;data rates may apply.</div>
+<div class="sms-time">Sent immediately after HELP</div>
+</div>
+</div></div>
 
 <!-- Section 7: Your Privacy -->
-<div><h2 class="text-xl font-bold text-foreground mb-3">7. Your Privacy</h2><div class="text-muted-foreground leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-muted-foreground"><p>Protecting your health information is our top priority. Our SMS communications are designed with the following safeguards:</p><ul><li><strong>HIPAA compliant:</strong> Messages never contain sensitive health details visible on lock screens or notification previews</li><li><strong>No third-party sharing:</strong> We do not share your phone number with third parties for marketing or any other purpose</li><li><strong>Minimum necessary standard:</strong> All message content follows the HIPAA minimum necessary standard, containing only the information needed for the specific notification</li></ul><p>Read our full <a href="/privacy" class="text-primary hover:text-primary/80">Privacy Policy</a> for detailed information about how we collect, use, and protect your data.</p><p>Read our <a href="/terms" class="text-primary hover:text-primary/80">Terms &amp; Conditions</a> for the complete terms governing your use of our services.</p></div></div>
+<div><h2 class="text-xl font-bold text-foreground mb-3">7. Your Privacy</h2><div class="text-muted-foreground leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-muted-foreground"><p>Protecting your health information is our top priority. <strong>Oz Health</strong> SMS communications are designed with the following safeguards:</p><ul><li><strong>HIPAA compliant:</strong> Messages never contain sensitive health details visible on lock screens or notification previews</li><li><strong>No third-party sharing:</strong> We do not share your phone number with third parties for marketing or any other purpose</li><li><strong>Minimum necessary standard:</strong> All message content follows the HIPAA minimum necessary standard, containing only the information needed for the specific notification</li></ul><p>Read our full <a href="/privacy" class="text-primary hover:text-primary/80">Privacy Policy</a> for detailed information about how we collect, use, and protect your data.</p><p>Read our <a href="/terms" class="text-primary hover:text-primary/80">Terms &amp; Conditions</a> for the complete terms governing your use of our services.</p></div></div>
 
 <!-- Section 8: Healthcare Compliance -->
-<div><h2 class="text-xl font-bold text-foreground mb-3">8. Healthcare Compliance</h2><div class="text-muted-foreground leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-muted-foreground"><ul><li>Oz Health is <strong>HIPAA</strong>, <strong>FERPA</strong>, and <strong>SOC 2</strong> compliant</li><li>SMS communications are limited to <strong>transactional healthcare messages</strong> only</li><li><strong>No marketing messages</strong> are sent via SMS</li><li>All message content follows the <strong>HIPAA minimum necessary standard</strong></li><li>Message logs are maintained in accordance with healthcare record retention requirements</li></ul></div></div>
+<div><h2 class="text-xl font-bold text-foreground mb-3">8. Healthcare Compliance</h2><div class="text-muted-foreground leading-relaxed space-y-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1 [&_li]:text-muted-foreground"><ul><li><strong>Oz Health</strong> is <strong>HIPAA</strong>, <strong>FERPA</strong>, and <strong>SOC 2</strong> compliant</li><li>SMS communications are limited to <strong>transactional healthcare messages</strong> only</li><li><strong>No marketing messages</strong> are sent via SMS</li><li>All message content follows the <strong>HIPAA minimum necessary standard</strong></li><li>Message logs are maintained in accordance with healthcare record retention requirements</li></ul></div></div>
 
 <!-- Section 9: Contact -->
-<div><h2 class="text-xl font-bold text-foreground mb-3">9. Contact</h2><div class="text-muted-foreground leading-relaxed space-y-3"><p>For questions about our SMS communication program, contact us at:</p><p>Oz Health<br/>Email: <a href="mailto:support@ozhealth.com" class="text-primary hover:text-primary/80">support@ozhealth.com</a><br/>Phone: (646) 780-9236</p></div></div>
+<div><h2 class="text-xl font-bold text-foreground mb-3">9. Contact</h2><div class="text-muted-foreground leading-relaxed space-y-3"><p>For questions about our SMS communication program, contact us at:</p><p><strong>Oz Health</strong><br/>Email: <a href="mailto:support@ozhealth.com" class="text-primary hover:text-primary/80">support@ozhealth.com</a><br/>Phone: <a href="tel:+16467809236" class="text-primary hover:text-primary/80">(646) 780-9236</a><br/>Website: <a href="https://ozehr.com" class="text-primary hover:text-primary/80">ozehr.com</a></p></div></div>
 
-</div><div class="mt-12 pt-6 border-t border-border text-xs text-muted-foreground"><p>&copy; 2026 Oz Health. All rights reserved. | <a href="/privacy" class="text-primary hover:text-primary/80">Privacy Policy</a> | <a href="/terms" class="text-primary hover:text-primary/80">Terms &amp; Conditions</a></p></div></div></section></main><footer class="bg-hero text-hero-foreground"><div class="max-w-7xl mx-auto px-6 py-16"><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"><div><img alt="Oz Health" loading="lazy" width="140" height="34" decoding="async" data-nimg="1" class="mb-4" style="color:transparent" src="/images/logo-white.svg"/><p class="text-hero-foreground/60 text-sm leading-relaxed mb-6">The modern EHR built for college health centers. HIPAA, FERPA, and SOC 2 compliant.</p><div class="flex items-center gap-4"><a href="#" class="text-hero-foreground/40 hover:text-hero-foreground transition-colors" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="#" class="text-hero-foreground/40 hover:text-hero-foreground transition-colors" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-5 h-5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a><a href="#" class="text-hero-foreground/40 hover:text-hero-foreground transition-colors" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-5 h-5"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></div></div><div><h4 class="font-semibold text-sm mb-4 text-hero-foreground">Platform</h4><ul class="space-y-2.5"><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/platform">Overview</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/platform#scheduling">Scheduling</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/platform#clinical-notes">Clinical Notes</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/platform#patient-portal">Patient Portal</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/platform#ai-assistant">AI Assistant</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/platform#billing">Billing</a></li></ul></div><div><h4 class="font-semibold text-sm mb-4 text-hero-foreground">Company</h4><ul class="space-y-2.5"><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/about">About</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/contact">Contact</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/resources">Resources</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/privacy">Privacy Policy</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/terms">Terms of Service</a></li></ul></div><div><h4 class="font-semibold text-sm mb-4 text-hero-foreground">Contact</h4><ul class="space-y-2.5 text-sm text-hero-foreground/60"><li><a href="mailto:contact@ozehr.com" class="hover:text-hero-foreground transition-colors">contact@ozehr.com</a></li><li><a href="tel:+15551234567" class="hover:text-hero-foreground transition-colors">(555) 123-4567</a></li></ul><div class="mt-6"><a class="inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors duration-200 ease-out bg-white text-primary hover:bg-white/90 shadow-sm h-9 px-4 text-xs  " href="/contact">Request a Demo</a></div></div></div><hr class="border-hero-foreground/10 my-10"/><div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-hero-foreground/40"><p>&copy; 2026 Oz Health, Inc. All rights reserved.</p><div class="flex items-center gap-6"><span class="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L1 3v5c0 4.17 2.99 8.06 7 9 4.01-.94 7-4.83 7-9V3L8 0zm-1 12.08L4 9.5l1.41-1.42L7 9.67l3.59-3.59L12 7.5l-5 4.58z"></path></svg>HIPAA</span><span class="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L1 3v5c0 4.17 2.99 8.06 7 9 4.01-.94 7-4.83 7-9V3L8 0zm-1 12.08L4 9.5l1.41-1.42L7 9.67l3.59-3.59L12 7.5l-5 4.58z"></path></svg>SOC 2</span><span class="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L1 3v5c0 4.17 2.99 8.06 7 9 4.01-.94 7-4.83 7-9V3L8 0zm-1 12.08L4 9.5l1.41-1.42L7 9.67l3.59-3.59L12 7.5l-5 4.58z"></path></svg>FERPA</span></div></div></div></footer><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"SMS Communication Consent","description":"Oz Health EHR SMS communication consent and opt-in/opt-out information","url":"https://ozehr.com/sms-consent","publisher":{"@type":"Organization","name":"Oz Health, Inc.","url":"https://ozehr.com","email":"contact@ozehr.com"}}</script></body></html>
+</div><div class="mt-12 pt-6 border-t border-border text-xs text-muted-foreground"><p>&copy; 2026 Oz Health. All rights reserved. | <a href="/privacy" class="text-primary hover:text-primary/80">Privacy Policy</a> | <a href="/terms" class="text-primary hover:text-primary/80">Terms &amp; Conditions</a></p></div></div></section></main><footer class="bg-hero text-hero-foreground"><div class="max-w-7xl mx-auto px-6 py-16"><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"><div><img alt="Oz Health" loading="lazy" width="140" height="34" decoding="async" data-nimg="1" class="mb-4" style="color:transparent" src="/images/logo-white.svg"/><p class="text-hero-foreground/60 text-sm leading-relaxed mb-6">The modern EHR built for college health centers. HIPAA, FERPA, and SOC 2 compliant.</p><div class="flex items-center gap-4"><a href="#" class="text-hero-foreground/40 hover:text-hero-foreground transition-colors" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin w-5 h-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="#" class="text-hero-foreground/40 hover:text-hero-foreground transition-colors" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-5 h-5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a><a href="#" class="text-hero-foreground/40 hover:text-hero-foreground transition-colors" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-5 h-5"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></div></div><div><h4 class="font-semibold text-sm mb-4 text-hero-foreground">Platform</h4><ul class="space-y-2.5"><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/platform">Overview</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/platform#scheduling">Scheduling</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/platform#clinical-notes">Clinical Notes</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/platform#patient-portal">Patient Portal</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/platform#ai-assistant">AI Assistant</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/platform#billing">Billing</a></li></ul></div><div><h4 class="font-semibold text-sm mb-4 text-hero-foreground">Company</h4><ul class="space-y-2.5"><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/about">About</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/contact">Contact</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/resources">Resources</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/privacy">Privacy Policy</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/terms">Terms of Service</a></li><li><a class="text-sm text-hero-foreground/60 hover:text-hero-foreground transition-colors" href="/sms-consent">SMS Consent</a></li></ul></div><div><h4 class="font-semibold text-sm mb-4 text-hero-foreground">Contact</h4><ul class="space-y-2.5 text-sm text-hero-foreground/60"><li><a href="mailto:contact@ozehr.com" class="hover:text-hero-foreground transition-colors">contact@ozehr.com</a></li><li><a href="tel:+16467809236" class="hover:text-hero-foreground transition-colors">(646) 780-9236</a></li></ul><div class="mt-6"><a class="inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-colors duration-200 ease-out bg-white text-primary hover:bg-white/90 shadow-sm h-9 px-4 text-xs  " href="/contact">Request a Demo</a></div></div></div><hr class="border-hero-foreground/10 my-10"/><div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-hero-foreground/40"><p>&copy; 2026 Oz Health, Inc. All rights reserved.</p><div class="flex items-center gap-6"><span class="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L1 3v5c0 4.17 2.99 8.06 7 9 4.01-.94 7-4.83 7-9V3L8 0zm-1 12.08L4 9.5l1.41-1.42L7 9.67l3.59-3.59L12 7.5l-5 4.58z"></path></svg>HIPAA</span><span class="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L1 3v5c0 4.17 2.99 8.06 7 9 4.01-.94 7-4.83 7-9V3L8 0zm-1 12.08L4 9.5l1.41-1.42L7 9.67l3.59-3.59L12 7.5l-5 4.58z"></path></svg>SOC 2</span><span class="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 0L1 3v5c0 4.17 2.99 8.06 7 9 4.01-.94 7-4.83 7-9V3L8 0zm-1 12.08L4 9.5l1.41-1.42L7 9.67l3.59-3.59L12 7.5l-5 4.58z"></path></svg>FERPA</span></div></div></div></footer><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"SMS Communication Consent","description":"Oz Health EHR SMS communication consent and opt-in/opt-out information","url":"https://ozehr.com/sms-consent","publisher":{"@type":"Organization","name":"Oz Health, Inc.","url":"https://ozehr.com","email":"contact@ozehr.com","telephone":"(646) 780-9236"}}</script></body></html>
