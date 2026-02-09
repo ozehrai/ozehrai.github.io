@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Security | OzEHR</title>
+    <meta
+      name="description"
+      content="OzEHR security overview for campus IT: SSO, role-based access, audit logs, and integration-ready architecture. HIPAA-aligned controls designed for college health."
+    />
+
+    <meta property="og:title" content="Security | OzEHR" />
+    <meta
+      property="og:description"
+      content="Security and privacy designed for campus IT: SSO, permissions, audit logs." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ozehr.com/security.html" />
+    <meta property="og:image" content="assets/svg/og.svg" />
+
+    <link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/site.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="nav">
+      <div class="container">
+        <div class="nav-inner">
+          <a class="logo" href="index.html" aria-label="OzEHR home">
+            <span class="logo-mark" aria-hidden="true"></span>
+            <span class="logo-name">
+              <strong>OzEHR</strong>
+              <span>College health, upgraded</span>
+            </span>
+          </a>
+
+          <nav class="nav-links" aria-label="Primary">
+            <a href="product.html">Product</a>
+            <a href="features.html">Features</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="security.html" aria-current="page">Security</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+          </nav>
+
+          <div class="nav-cta">
+            <a class="btn ghost" href="contact.html">Contact</a>
+            <a class="btn primary" href="contact.html">Request a demo</a>
+          </div>
+
+          <button
+            class="nav-toggle"
+            data-nav-toggle
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M5 7H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M5 17H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu" data-mobile-menu>
+          <a href="product.html">Product</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="security.html" aria-current="page">Security</a>
+          <a href="resources.html">Resources</a>
+          <a href="about.html">About</a>
+          <a class="btn secondary" href="contact.html">Contact</a>
+          <a class="btn primary" href="contact.html">Request a demo</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero">
+        <div class="container">
+          <div class="grid hero-grid">
+            <div class="reveal">
+              <span class="kicker"><span class="dot" aria-hidden="true"></span> Security & privacy</span>
+              <h1 class="h1">Security that campus IT can trust.</h1>
+              <p class="lead">
+                College health sits at the intersection of clinical care, student life, and campus identity systems.
+                OzEHR is built with IT-friendly controls like SSO, permissions, and audit logging.
+              </p>
+              <div class="btn-row">
+                <a class="btn primary" href="contact.html">Request an IT/security call</a>
+                <a class="btn secondary" href="product.html">See product modules</a>
+              </div>
+              <div class="notice" style="margin-top:14px">
+                Note: this page describes capabilities and security controls. Replace placeholders with your official security documentation and compliance attestations.
+              </div>
+            </div>
+
+            <div class="panel reveal">
+              <span class="pill">At a glance</span>
+              <h2 class="h2" style="margin-top:10px">IT checklist</h2>
+
+              <div class="artboard artbox" style="margin:10px 0 6px">
+                <div class="art-badge"><span aria-hidden="true"></span> Security</div>
+                <div class="art-deco" aria-hidden="true">
+                  <div class="art-spark one float-b">
+                    <img src="assets/svg/oz-shield.svg" alt="" style="width:28px;height:28px" />
+                  </div>
+                  <div class="art-spark two float-a">
+                    <img src="assets/svg/oz-neural.svg" alt="" style="width:28px;height:28px" />
+                  </div>
+                </div>
+                <img
+                  class="art float-b"
+                  src="assets/img/generated/security-illustration.png"
+                  alt="Security illustration showing HIPAA compliance and cloud hosting."
+                  loading="lazy"
+                  style="width:100%"
+                />
+              </div>
+              <div class="list">
+                <div class="item"><div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><strong>SSO (SAML)</strong><p>Campus identity providers, role mapping, and provisioning.</p></div></div>
+                <div class="item"><div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><strong>Role-based access</strong><p>Granular permissions for clinical, front desk, and admin staff.</p></div></div>
+                <div class="item"><div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><strong>Audit logs</strong><p>Visibility for security and compliance review.</p></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="header reveal">
+            <div>
+              <h2 class="h2">Security controls</h2>
+              <p>Controls that matter to campus IT and clinical leadership.</p>
+            </div>
+          </div>
+
+          <div class="grid cards-3">
+            <div class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <img src="assets/svg/oz-shield.svg" alt="" style="width:20px;height:20px" />
+              </div>
+              <h3 class="h3">Identity + access</h3>
+              <p>SSO (SAML), permissioned roles, and security settings designed for real teams.</p>
+            </div>
+
+            <div class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 5H19V19H5V5Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M9 9H15V15H9V9Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3 class="h3">Auditability</h3>
+              <p>Audit logs and administrative views to support investigations and compliance workflows.</p>
+            </div>
+
+            <div class="feature-card reveal">
+              <div class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 7H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M7 12H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M7 17H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3 class="h3">Policy-ready administration</h3>
+              <p>Security settings, user management, and configuration controls aligned to standard IT expectations.</p>
+            </div>
+          </div>
+
+          <div class="grid split" style="margin-top:18px">
+            <div class="panel reveal">
+              <span class="pill">Compliance alignment</span>
+              <h2 class="h2" style="margin-top:10px">HIPAA and campus needs</h2>
+              <p class="muted">
+                College health requires a pragmatic approach to privacy. OzEHR is designed with HIPAA-aligned controls and supports campus
+                workflows that may intersect with FERPA considerations.
+              </p>
+              <div class="list">
+                <div class="item"><div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><strong>Least privilege</strong><p>Roles and permissions limit access to what users need.</p></div></div>
+                <div class="item"><div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><strong>Operational visibility</strong><p>Audit trails for administrative and security review.</p></div></div>
+                <div class="item"><div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><strong>Secure messaging</strong><p>Keep sensitive communication inside secure channels.</p></div></div>
+              </div>
+            </div>
+
+            <div class="panel reveal">
+              <span class="pill">Integrations</span>
+              <h2 class="h2" style="margin-top:10px">Integration-ready architecture</h2>
+              <p class="muted">Labs, imaging, pharmacy, and campus systems: integration work should be straightforward, not a research project.</p>
+              <div class="list">
+                <div class="item"><div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><strong>SSO + user lifecycle</strong><p>Align accounts and roles with campus identity systems.</p></div></div>
+                <div class="item"><div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><strong>Interfaces and APIs</strong><p>Integration endpoints designed to support common clinical data flows.</p></div></div>
+                <div class="item"><div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><strong>Audit-friendly operations</strong><p>Clear logs and reporting reduce friction in security reviews.</p></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="callout reveal">
+            <div class="grid">
+              <div>
+                <h2 class="h2" style="margin:0">Need an IT packet?</h2>
+                <p class="muted" style="margin-top:10px">
+                  We can provide a security overview, integration notes, and a rollout checklist for your procurement process.
+                </p>
+              </div>
+              <div class="btn-row" style="justify-content:flex-end">
+                <a class="btn secondary" href="contact.html">Contact</a>
+                <a class="btn primary" href="contact.html">Request IT packet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="stack">
+            <a class="logo" href="index.html" aria-label="OzEHR home">
+              <span class="logo-mark" aria-hidden="true"></span>
+              <span class="logo-name">
+                <strong>OzEHR</strong>
+                <span>Modern EHR built for college health</span>
+              </span>
+            </a>
+            <small>
+              Contact: <a href="mailto:contact@ozehr.com">contact@ozehr.com</a>.
+            </small>
+          </div>
+
+          <div>
+            <h4>Product</h4>
+            <div class="stack">
+              <a href="product.html">Overview</a>
+              <a href="features.html">Features</a>
+              <a href="security.html" aria-current="page">Security</a>
+              <a href="pricing.html">Pricing</a>
+              <a href="resources.html">Resources</a>
+            </div>
+          </div>
+
+          <div>
+            <h4>Company</h4>
+            <div class="stack">
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+              <a href="privacy.html">Privacy</a>
+              <a href="terms.html">Terms</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <small>Copyright <span id="year"></span> OzEHR. All rights reserved.</small>
+          <small>Phone (placeholder): <a href="tel:+18885550123">(888) 555-0123</a></small>
+        </div>
+      </div>
+
+      <script>
+        document.getElementById('year').textContent = String(new Date().getFullYear());
+      </script>
+    </footer>
+  </body>
+</html>

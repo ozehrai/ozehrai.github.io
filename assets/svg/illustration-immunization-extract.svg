@@ -1,0 +1,68 @@
+<svg width="1000" height="760" viewBox="0 0 1000 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Immunization extraction illustration">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="120" x2="900" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4E4A8" stop-opacity="0.42"/>
+      <stop offset="0.52" stop-color="#D8F0D9" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#0F766E" stop-opacity="0.14"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#185B57"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0C1F1F" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <path d="M176 188C246 72 404 52 520 86C668 128 680 36 804 66C944 100 1024 238 986 376C954 494 1026 554 958 638C880 734 700 712 572 676C458 644 280 670 206 566C138 470 118 308 176 188Z" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <!-- Document -->
+    <rect x="130" y="180" width="310" height="420" rx="44" fill="rgba(255,255,255,0.84)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <path d="M184 240H344" stroke="rgba(12,31,31,0.14)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M184 276H314" stroke="rgba(12,31,31,0.12)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M184 312H360" stroke="rgba(12,31,31,0.12)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M184 348H330" stroke="rgba(12,31,31,0.10)" stroke-width="10" stroke-linecap="round"/>
+    <rect x="184" y="392" width="210" height="140" rx="30" fill="rgba(244,228,168,0.58)" stroke="rgba(12,31,31,0.10)"/>
+    <circle cx="370" cy="450" r="26" fill="rgba(216,240,217,0.74)" stroke="rgba(12,31,31,0.10)"/>
+    <path d="M360 450H380" stroke="rgba(24,91,87,0.72)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M370 440V460" stroke="rgba(24,91,87,0.72)" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Scan lines -->
+    <rect x="150" y="208" width="270" height="10" rx="5" fill="rgba(15,118,110,0.18)"/>
+    <rect x="150" y="560" width="270" height="10" rx="5" fill="rgba(15,118,110,0.18)"/>
+
+    <!-- AI chip -->
+    <rect x="470" y="276" width="210" height="210" rx="54" fill="rgba(255,255,255,0.86)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <rect x="520" y="326" width="110" height="110" rx="26" fill="rgba(15,118,110,0.12)" stroke="rgba(15,118,110,0.18)" stroke-width="2"/>
+    <path d="M552 382H598" stroke="url(#brand)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M575 358V406" stroke="url(#brand)" stroke-width="6" stroke-linecap="round"/>
+
+    <path d="M500 262V236" stroke="rgba(12,31,31,0.14)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M560 262V236" stroke="rgba(12,31,31,0.14)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M620 262V236" stroke="rgba(12,31,31,0.14)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M500 526V500" stroke="rgba(12,31,31,0.14)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M560 526V500" stroke="rgba(12,31,31,0.14)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M620 526V500" stroke="rgba(12,31,31,0.14)" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Output: structured table -->
+    <rect x="710" y="210" width="240" height="390" rx="46" fill="rgba(255,255,255,0.86)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <rect x="748" y="260" width="164" height="30" rx="15" fill="rgba(12,31,31,0.06)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="748" y="304" width="164" height="30" rx="15" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="748" y="348" width="164" height="30" rx="15" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="748" y="392" width="164" height="30" rx="15" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="748" y="436" width="110" height="30" rx="15" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="862" y="260" width="50" height="30" rx="15" fill="rgba(216,240,217,0.74)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="862" y="304" width="50" height="30" rx="15" fill="rgba(216,240,217,0.70)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="862" y="348" width="50" height="30" rx="15" fill="rgba(244,228,168,0.72)" stroke="rgba(12,31,31,0.10)"/>
+
+    <!-- Connector arrows -->
+    <path d="M448 392H464" stroke="rgba(12,31,31,0.16)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M678 392H702" stroke="rgba(12,31,31,0.16)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M454 392L438 382" stroke="rgba(12,31,31,0.16)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M454 392L438 402" stroke="rgba(12,31,31,0.16)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M700 392L684 382" stroke="rgba(12,31,31,0.16)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M700 392L684 402" stroke="rgba(12,31,31,0.16)" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>
+

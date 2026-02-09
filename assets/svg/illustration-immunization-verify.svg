@@ -1,0 +1,64 @@
+<svg width="1000" height="760" viewBox="0 0 1000 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Immunization verification illustration">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="120" x2="900" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D8F0D9" stop-opacity="0.40"/>
+      <stop offset="0.55" stop-color="#F4E4A8" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#0F766E" stop-opacity="0.14"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#185B57"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0C1F1F" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <path d="M176 188C246 72 404 52 520 86C668 128 680 36 804 66C944 100 1024 238 986 376C954 494 1026 554 958 638C880 734 700 712 572 676C458 644 280 670 206 566C138 470 118 308 176 188Z" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <!-- Left: student chart record -->
+    <rect x="110" y="220" width="320" height="420" rx="46" fill="rgba(255,255,255,0.86)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <rect x="152" y="270" width="236" height="34" rx="17" fill="rgba(15,118,110,0.10)" stroke="rgba(15,118,110,0.18)"/>
+    <circle cx="176" cy="287" r="7" fill="#0F766E"/>
+    <rect x="192" y="279" width="170" height="16" rx="8" fill="rgba(24,91,87,0.55)"/>
+
+    <rect x="152" y="330" width="236" height="42" rx="20" fill="rgba(12,31,31,0.06)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="168" y="345" width="120" height="12" rx="6" fill="rgba(12,31,31,0.12)"/>
+    <rect x="312" y="340" width="60" height="22" rx="11" fill="rgba(216,240,217,0.74)" stroke="rgba(12,31,31,0.10)"/>
+
+    <rect x="152" y="388" width="236" height="42" rx="20" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="168" y="403" width="140" height="12" rx="6" fill="rgba(12,31,31,0.12)"/>
+    <rect x="312" y="398" width="60" height="22" rx="11" fill="rgba(244,228,168,0.72)" stroke="rgba(12,31,31,0.10)"/>
+
+    <rect x="152" y="446" width="236" height="42" rx="20" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="168" y="461" width="110" height="12" rx="6" fill="rgba(12,31,31,0.12)"/>
+    <rect x="312" y="456" width="60" height="22" rx="11" fill="rgba(216,240,217,0.74)" stroke="rgba(12,31,31,0.10)"/>
+
+    <!-- Right: registry / rules -->
+    <rect x="570" y="220" width="320" height="420" rx="46" fill="rgba(255,255,255,0.86)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <path d="M708 284C708 260 728 240 752 240C768 240 782 248 790 262C794 260 800 258 806 258C828 258 846 276 846 298C846 322 826 342 802 342H728C700 342 678 320 678 292C678 272 690 256 708 250" fill="rgba(216,240,217,0.62)" stroke="rgba(12,31,31,0.10)" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M756 282L770 296L794 270" stroke="url(#brand)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="612" y="370" width="236" height="56" rx="26" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="634" y="390" width="130" height="12" rx="6" fill="rgba(12,31,31,0.12)"/>
+    <rect x="784" y="384" width="48" height="24" rx="12" fill="rgba(216,240,217,0.74)" stroke="rgba(12,31,31,0.10)"/>
+    <path d="M794 396L802 404L816 390" stroke="url(#brand)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="612" y="446" width="236" height="56" rx="26" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="634" y="466" width="150" height="12" rx="6" fill="rgba(12,31,31,0.12)"/>
+    <rect x="784" y="460" width="48" height="24" rx="12" fill="rgba(244,228,168,0.72)" stroke="rgba(12,31,31,0.10)"/>
+    <path d="M796 472H820" stroke="rgba(12,31,31,0.42)" stroke-width="3.5" stroke-linecap="round"/>
+
+    <rect x="612" y="522" width="236" height="56" rx="26" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="634" y="542" width="110" height="12" rx="6" fill="rgba(12,31,31,0.12)"/>
+    <rect x="784" y="536" width="48" height="24" rx="12" fill="rgba(216,240,217,0.74)" stroke="rgba(12,31,31,0.10)"/>
+    <path d="M794 548L802 556L816 542" stroke="url(#brand)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Compare arrows -->
+    <path d="M452 430H548" stroke="rgba(12,31,31,0.16)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M548 430L526 416" stroke="rgba(12,31,31,0.16)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M548 430L526 444" stroke="rgba(12,31,31,0.16)" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
+

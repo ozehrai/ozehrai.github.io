@@ -1,0 +1,21 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="12" y1="8" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E" />
+      <stop offset="1" stop-color="#185B57" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20 18) rotate(58) scale(26 26)">
+      <stop stop-color="#F4E4A8" stop-opacity="0.95" />
+      <stop offset="1" stop-color="#F4E4A8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#g)" />
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#glow)" />
+
+  <!-- Minimal triangle mark -->
+  <path d="M32 17L48.5 46.5H15.5L32 17Z" fill="#F7F4EE" fill-opacity="0.95" stroke="rgba(255,255,255,0.30)" stroke-width="2" stroke-linejoin="round" />
+
+  <!-- Accent dot -->
+  <circle cx="46" cy="18" r="4" fill="#F4E4A8" fill-opacity="0.95" />
+</svg>

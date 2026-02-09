@@ -1,0 +1,71 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Student portal illustration">
+  <defs>
+    <linearGradient id="bg" x1="180" y1="120" x2="1040" y2="830" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4E4A8" stop-opacity="0.42"/>
+      <stop offset="0.55" stop-color="#D8F0D9" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#0F766E" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#185B57"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0C1F1F" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <path d="M206 226C280 90 452 68 584 112C750 168 760 56 896 92C1052 134 1140 296 1092 452C1050 586 1138 664 1060 764C972 876 768 848 622 802C496 762 300 792 222 658C152 522 142 362 206 226Z" fill="url(#bg)"/>
+
+  <!-- Phone -->
+  <g filter="url(#shadow)">
+    <rect x="720" y="160" width="320" height="600" rx="60" fill="rgba(255,255,255,0.82)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <rect x="760" y="230" width="240" height="470" rx="44" fill="rgba(255,255,255,0.72)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="840" y="194" width="80" height="10" rx="5" fill="rgba(12,31,31,0.18)"/>
+
+    <rect x="790" y="260" width="180" height="38" rx="19" fill="rgba(15,118,110,0.12)" stroke="rgba(15,118,110,0.18)"/>
+    <circle cx="812" cy="279" r="6" fill="#0F766E"/>
+    <rect x="828" y="272" width="122" height="14" rx="7" fill="rgba(24,91,87,0.55)"/>
+
+    <rect x="790" y="318" width="210" height="94" rx="26" fill="rgba(255,255,255,0.76)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="812" y="348" width="130" height="12" rx="6" fill="rgba(12,31,31,0.12)"/>
+    <rect x="812" y="372" width="170" height="12" rx="6" fill="rgba(12,31,31,0.10)"/>
+    <rect x="902" y="336" width="80" height="36" rx="18" fill="rgba(216,240,217,0.72)" stroke="rgba(12,31,31,0.10)"/>
+
+    <rect x="790" y="430" width="210" height="94" rx="26" fill="rgba(255,255,255,0.76)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="812" y="460" width="160" height="12" rx="6" fill="rgba(12,31,31,0.12)"/>
+    <rect x="812" y="484" width="140" height="12" rx="6" fill="rgba(12,31,31,0.10)"/>
+
+    <rect x="790" y="542" width="210" height="128" rx="26" fill="rgba(255,255,255,0.76)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="812" y="574" width="170" height="12" rx="6" fill="rgba(12,31,31,0.12)"/>
+    <rect x="812" y="604" width="140" height="12" rx="6" fill="rgba(12,31,31,0.10)"/>
+    <rect x="812" y="632" width="150" height="12" rx="6" fill="rgba(12,31,31,0.10)"/>
+
+    <rect x="832" y="708" width="96" height="32" rx="16" fill="url(#brand)"/>
+    <rect x="848" y="719" width="64" height="10" rx="5" fill="rgba(255,255,255,0.85)"/>
+  </g>
+
+  <!-- Student (simplified) -->
+  <g filter="url(#shadow)">
+    <circle cx="420" cy="312" r="64" fill="#F4E4A8"/>
+    <path d="M340 508C364 426 408 382 472 382C536 382 580 426 604 508" fill="rgba(15,118,110,0.20)"/>
+    <path d="M340 508C364 426 408 382 472 382C536 382 580 426 604 508" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+
+    <rect x="342" y="508" width="260" height="210" rx="80" fill="rgba(255,255,255,0.78)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+
+    <path d="M410 454C412 430 432 412 456 412H490C514 412 534 430 536 454" stroke="rgba(12,31,31,0.16)" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Message bubble -->
+    <g opacity="0.95">
+      <rect x="260" y="188" width="250" height="92" rx="30" fill="rgba(255,255,255,0.80)" stroke="rgba(12,31,31,0.10)"/>
+      <path d="M312 280L330 300L332 276" fill="rgba(255,255,255,0.80)" stroke="rgba(12,31,31,0.10)"/>
+      <rect x="292" y="218" width="176" height="12" rx="6" fill="rgba(12,31,31,0.12)"/>
+      <rect x="292" y="242" width="146" height="12" rx="6" fill="rgba(12,31,31,0.10)"/>
+    </g>
+  </g>
+
+  <!-- Sparkle (animated) -->
+  <g>
+    <path d="M212 650L228 702L280 718L228 734L212 786L196 734L144 718L196 702L212 650Z" fill="#0F766E" fill-opacity="0.35"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 212 718" to="360 212 718" dur="16s" repeatCount="indefinite"/>
+  </g>
+</svg>

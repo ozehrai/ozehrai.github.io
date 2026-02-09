@@ -1,0 +1,78 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI immunization workflow illustration">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="130" x2="1060" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4E4A8" stop-opacity="0.46"/>
+      <stop offset="0.55" stop-color="#D8F0D9" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#0F766E" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#185B57"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0C1F1F" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <path d="M206 226C280 90 452 68 584 112C750 168 760 56 896 92C1052 134 1140 296 1092 452C1050 586 1138 664 1060 764C972 876 768 848 622 802C496 762 300 792 222 658C152 522 142 362 206 226Z" fill="url(#bg)"/>
+
+  <!-- Workflow cards -->
+  <g filter="url(#shadow)">
+    <!-- Card 1: Document -->
+    <rect x="140" y="310" width="240" height="280" rx="32" fill="rgba(255,255,255,0.82)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <rect x="175" y="360" width="170" height="16" rx="8" fill="rgba(12,31,31,0.12)"/>
+    <rect x="175" y="392" width="140" height="14" rx="7" fill="rgba(12,31,31,0.10)"/>
+    <rect x="175" y="420" width="156" height="14" rx="7" fill="rgba(12,31,31,0.10)"/>
+    <rect x="175" y="472" width="190" height="78" rx="22" fill="rgba(244,228,168,0.55)" stroke="rgba(12,31,31,0.10)"/>
+    <path d="M214 520C226 498 250 488 276 494C308 502 316 490 340 496C368 504 384 532 374 558C366 578 382 592 368 610C352 634 316 626 290 618C266 612 232 620 216 598C202 578 198 544 214 520Z" fill="rgba(15,118,110,0.18)"/>
+    <path d="M302 458C302 438 318 422 338 422C358 422 374 438 374 458C374 478 358 494 338 494C318 494 302 478 302 458Z" fill="rgba(216,240,217,0.70)" stroke="rgba(12,31,31,0.10)"/>
+    <path d="M332 456H344" stroke="rgba(24,91,87,0.70)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M338 450V462" stroke="rgba(24,91,87,0.70)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Card 2: AI extraction -->
+    <rect x="430" y="246" width="340" height="220" rx="36" fill="rgba(255,255,255,0.84)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <rect x="470" y="292" width="260" height="44" rx="22" fill="rgba(15,118,110,0.12)" stroke="rgba(15,118,110,0.18)"/>
+    <circle cx="498" cy="314" r="7" fill="#0F766E"/>
+    <rect x="514" y="306" width="196" height="16" rx="8" fill="rgba(24,91,87,0.55)"/>
+    <rect x="470" y="356" width="134" height="72" rx="22" fill="rgba(255,255,255,0.74)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="484" y="374" width="92" height="12" rx="6" fill="rgba(12,31,31,0.12)"/>
+    <rect x="484" y="396" width="106" height="12" rx="6" fill="rgba(12,31,31,0.10)"/>
+    <rect x="616" y="356" width="114" height="72" rx="22" fill="rgba(216,240,217,0.72)" stroke="rgba(12,31,31,0.10)"/>
+    <path d="M656 382C656 366 669 353 685 353C701 353 714 366 714 382C714 398 701 411 685 411C669 411 656 398 656 382Z" fill="url(#brand)"/>
+    <path d="M674 381L682 389L696 374" stroke="rgba(255,255,255,0.92)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Card 3: Structured record -->
+    <rect x="430" y="496" width="340" height="260" rx="36" fill="rgba(255,255,255,0.84)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <rect x="470" y="540" width="260" height="34" rx="17" fill="rgba(12,31,31,0.06)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="470" y="588" width="260" height="34" rx="17" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="470" y="636" width="260" height="34" rx="17" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="470" y="684" width="178" height="34" rx="17" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="486" y="550" width="90" height="14" rx="7" fill="rgba(12,31,31,0.12)"/>
+    <rect x="486" y="598" width="120" height="14" rx="7" fill="rgba(12,31,31,0.12)"/>
+    <rect x="486" y="646" width="96" height="14" rx="7" fill="rgba(12,31,31,0.12)"/>
+    <rect x="486" y="694" width="108" height="14" rx="7" fill="rgba(12,31,31,0.12)"/>
+    <rect x="636" y="548" width="80" height="18" rx="9" fill="rgba(216,240,217,0.78)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="636" y="596" width="80" height="18" rx="9" fill="rgba(216,240,217,0.72)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="636" y="644" width="80" height="18" rx="9" fill="rgba(244,228,168,0.70)" stroke="rgba(12,31,31,0.10)"/>
+
+    <!-- Card 4: Verified -->
+    <rect x="820" y="332" width="240" height="340" rx="40" fill="rgba(255,255,255,0.84)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <path d="M940 382L1012 414V480C1012 528 974 566 940 580C906 566 868 528 868 480V414L940 382Z" fill="rgba(15,118,110,0.12)" stroke="rgba(15,118,110,0.22)" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M916 482L934 500L970 462" stroke="url(#brand)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="872" y="600" width="136" height="40" rx="20" fill="url(#brand)"/>
+    <rect x="902" y="614" width="76" height="12" rx="6" fill="rgba(255,255,255,0.88)"/>
+
+    <!-- Connectors -->
+    <path d="M388 450H424" stroke="rgba(12,31,31,0.16)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M770 356H816" stroke="rgba(12,31,31,0.16)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M770 624H816" stroke="rgba(12,31,31,0.16)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M792 356L816 356" stroke="rgba(12,31,31,0.16)" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Sparkle -->
+  <g opacity="0.75">
+    <path d="M208 164L220 204L260 216L220 228L208 268L196 228L156 216L196 204L208 164Z" fill="#0F766E" fill-opacity="0.35"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 208 216" to="360 208 216" dur="18s" repeatCount="indefinite"/>
+  </g>
+</svg>
+

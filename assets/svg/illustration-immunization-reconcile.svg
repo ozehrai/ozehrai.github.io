@@ -1,0 +1,60 @@
+<svg width="1000" height="760" viewBox="0 0 1000 760" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Immunization reconciliation illustration">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="120" x2="900" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4E4A8" stop-opacity="0.40"/>
+      <stop offset="0.48" stop-color="#D8F0D9" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#0F766E" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#185B57"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0C1F1F" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <path d="M176 188C246 72 404 52 520 86C668 128 680 36 804 66C944 100 1024 238 986 376C954 494 1026 554 958 638C880 734 700 712 572 676C458 644 280 670 206 566C138 470 118 308 176 188Z" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <!-- Main dashboard -->
+    <rect x="120" y="190" width="520" height="460" rx="54" fill="rgba(255,255,255,0.86)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <rect x="170" y="240" width="240" height="38" rx="19" fill="rgba(15,118,110,0.10)" stroke="rgba(15,118,110,0.18)"/>
+    <circle cx="192" cy="259" r="7" fill="#0F766E"/>
+    <rect x="208" y="251" width="174" height="16" rx="8" fill="rgba(24,91,87,0.55)"/>
+
+    <!-- Cards -->
+    <rect x="170" y="304" width="420" height="98" rx="30" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="206" y="334" width="208" height="14" rx="7" fill="rgba(12,31,31,0.12)"/>
+    <rect x="206" y="360" width="166" height="12" rx="6" fill="rgba(12,31,31,0.10)"/>
+    <rect x="460" y="332" width="110" height="38" rx="19" fill="rgba(216,240,217,0.74)" stroke="rgba(12,31,31,0.10)"/>
+    <path d="M492 350L504 362L530 336" stroke="url(#brand)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <rect x="170" y="420" width="420" height="98" rx="30" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="206" y="450" width="238" height="14" rx="7" fill="rgba(12,31,31,0.12)"/>
+    <rect x="206" y="476" width="196" height="12" rx="6" fill="rgba(12,31,31,0.10)"/>
+    <rect x="460" y="448" width="110" height="38" rx="19" fill="rgba(244,228,168,0.74)" stroke="rgba(12,31,31,0.10)"/>
+    <path d="M492 467H538" stroke="rgba(12,31,31,0.42)" stroke-width="4.5" stroke-linecap="round"/>
+
+    <rect x="170" y="536" width="420" height="98" rx="30" fill="rgba(12,31,31,0.05)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="206" y="566" width="190" height="14" rx="7" fill="rgba(12,31,31,0.12)"/>
+    <rect x="206" y="592" width="220" height="12" rx="6" fill="rgba(12,31,31,0.10)"/>
+    <rect x="460" y="564" width="110" height="38" rx="19" fill="rgba(216,240,217,0.74)" stroke="rgba(12,31,31,0.10)"/>
+    <path d="M492 582L504 594L530 568" stroke="url(#brand)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Audit pill -->
+    <rect x="398" y="240" width="192" height="38" rx="19" fill="rgba(255,255,255,0.74)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="416" y="252" width="156" height="14" rx="7" fill="rgba(12,31,31,0.12)"/>
+
+    <!-- Right: compliance status -->
+    <rect x="680" y="230" width="200" height="420" rx="54" fill="rgba(255,255,255,0.86)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <path d="M780 290L846 320V380C846 420 816 452 780 466C744 452 714 420 714 380V320L780 290Z" fill="rgba(15,118,110,0.12)" stroke="rgba(15,118,110,0.22)" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M756 372L774 390L806 356" stroke="url(#brand)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="716" y="498" width="128" height="38" rx="19" fill="url(#brand)"/>
+    <rect x="742" y="511" width="76" height="12" rx="6" fill="rgba(255,255,255,0.88)"/>
+    <rect x="716" y="552" width="150" height="62" rx="26" fill="rgba(216,240,217,0.68)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="734" y="574" width="110" height="12" rx="6" fill="rgba(12,31,31,0.12)"/>
+    <rect x="734" y="594" width="86" height="12" rx="6" fill="rgba(12,31,31,0.10)"/>
+  </g>
+</svg>
+

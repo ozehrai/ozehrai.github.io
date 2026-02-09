@@ -1,0 +1,59 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Security illustration">
+  <defs>
+    <linearGradient id="bg" x1="180" y1="120" x2="1040" y2="830" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E" stop-opacity="0.16"/>
+      <stop offset="0.55" stop-color="#D8F0D9" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#F4E4A8" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#185B57"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0C1F1F" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <path d="M222 210C296 104 438 62 560 90C716 126 740 40 862 64C1026 96 1124 246 1090 398C1058 542 1150 612 1076 724C990 858 774 842 626 802C490 762 296 792 226 654C162 522 154 342 222 210Z" fill="url(#bg)"/>
+
+  <!-- Network lines -->
+  <g stroke="rgba(12,31,31,0.18)" stroke-width="2" stroke-linecap="round" opacity="0.9">
+    <path d="M210 520C320 452 420 430 520 460"/>
+    <path d="M520 460C636 496 724 488 836 410"/>
+    <path d="M350 650C470 590 602 586 730 640"/>
+    <path d="M730 640C852 688 960 660 1040 560"/>
+  </g>
+
+  <!-- Nodes (softly pulsing with SMIL) -->
+  <g>
+    <circle cx="210" cy="520" r="10" fill="#F4E4A8"/>
+    <circle cx="520" cy="460" r="10" fill="#D8F0D9"/>
+    <circle cx="836" cy="410" r="10" fill="#F4E4A8"/>
+    <circle cx="350" cy="650" r="10" fill="#D8F0D9"/>
+    <circle cx="730" cy="640" r="10" fill="#F4E4A8"/>
+    <circle cx="1040" cy="560" r="10" fill="#D8F0D9"/>
+
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3.6s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Shield -->
+  <g filter="url(#shadow)">
+    <path d="M600 170L860 260V430C860 602 716 712 600 770C484 712 340 602 340 430V260L600 170Z" fill="rgba(255,255,255,0.82)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+
+    <path d="M600 220L810 292V428C810 566 696 652 600 700C504 652 390 566 390 428V292L600 220Z" fill="url(#brand)" fill-opacity="0.16"/>
+
+    <path d="M600 240V640" stroke="#185B57" stroke-width="6" stroke-linecap="round"/>
+    <path d="M520 390H680" stroke="#185B57" stroke-width="6" stroke-linecap="round"/>
+
+    <rect x="470" y="540" width="260" height="74" rx="37" fill="rgba(216,240,217,0.72)" stroke="rgba(12,31,31,0.12)"/>
+    <path d="M560 577H640" stroke="#185B57" stroke-width="6" stroke-linecap="round"/>
+    <path d="M600 555V599" stroke="#185B57" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Orbit ring -->
+  <g opacity="0.85">
+    <circle cx="600" cy="430" r="270" stroke="rgba(12,31,31,0.12)" stroke-width="2" stroke-dasharray="6 10"/>
+    <circle cx="600" cy="160" r="6" fill="#0F766E" fill-opacity="0.55"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 600 430" to="360 600 430" dur="22s" repeatCount="indefinite"/>
+  </g>
+</svg>

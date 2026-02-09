@@ -1,0 +1,57 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Immunization pipeline flow diagram">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#185B57"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0C1F1F" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="140" width="240" height="240" rx="46" fill="rgba(255,255,255,0.86)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <rect x="360" y="140" width="240" height="240" rx="46" fill="rgba(255,255,255,0.86)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <rect x="650" y="140" width="240" height="240" rx="46" fill="rgba(255,255,255,0.86)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+    <rect x="940" y="140" width="240" height="240" rx="46" fill="rgba(255,255,255,0.86)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
+
+    <!-- Node icons -->
+    <!-- Document -->
+    <rect x="140" y="192" width="100" height="136" rx="18" fill="rgba(244,228,168,0.60)" stroke="rgba(12,31,31,0.10)" stroke-width="2"/>
+    <path d="M160 224H220" stroke="rgba(12,31,31,0.22)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M160 254H210" stroke="rgba(12,31,31,0.18)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M160 284H224" stroke="rgba(12,31,31,0.18)" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Extract (AI chip) -->
+    <rect x="430" y="206" width="100" height="108" rx="26" fill="rgba(15,118,110,0.12)" stroke="rgba(15,118,110,0.20)" stroke-width="2"/>
+    <path d="M448 228H512" stroke="url(#brand)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M480 214V300" stroke="url(#brand)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M410 260H394" stroke="rgba(12,31,31,0.20)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M550 260H566" stroke="rgba(12,31,31,0.20)" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Verify (shield) -->
+    <path d="M770 206L826 232V286C826 324 796 356 770 368C744 356 714 324 714 286V232L770 206Z" fill="rgba(15,118,110,0.12)" stroke="rgba(15,118,110,0.22)" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M748 286L764 302L792 274" stroke="url(#brand)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Reconcile (checklist) -->
+    <rect x="1010" y="200" width="100" height="132" rx="20" fill="rgba(216,240,217,0.62)" stroke="rgba(12,31,31,0.10)" stroke-width="2"/>
+    <path d="M1030 236L1040 246L1058 228" stroke="url(#brand)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1070 240H1090" stroke="rgba(12,31,31,0.20)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M1030 276L1040 286L1058 268" stroke="url(#brand)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1070 280H1090" stroke="rgba(12,31,31,0.18)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M1030 316L1040 326L1058 308" stroke="url(#brand)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1070 320H1090" stroke="rgba(12,31,31,0.18)" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Connectors -->
+    <path d="M310 260H360" stroke="rgba(12,31,31,0.18)" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 10">
+      <animate attributeName="stroke-dashoffset" from="0" to="-48" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M600 260H650" stroke="rgba(12,31,31,0.18)" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 10">
+      <animate attributeName="stroke-dashoffset" from="0" to="-48" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M890 260H940" stroke="rgba(12,31,31,0.18)" stroke-width="8" stroke-linecap="round" stroke-dasharray="14 10">
+      <animate attributeName="stroke-dashoffset" from="0" to="-48" dur="2.4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
+
