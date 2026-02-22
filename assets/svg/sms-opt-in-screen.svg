@@ -40,7 +40,7 @@
 
   <text x="164" y="474" fill="#446060" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system">Mobile phone</text>
   <rect x="164" y="486" width="356" height="46" rx="12" fill="#FFFFFF" stroke="#D2DDDA"/>
-  <text x="184" y="515" fill="#7B8E8D" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system">(646) 555-0198</text>
+  <text x="184" y="515" fill="#7B8E8D" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system">(646) 555-0198</text>
 
   <rect x="164" y="598" width="356" height="56" rx="14" fill="#DDE9E6" stroke="#CCD9D5"/>
   <text x="230" y="634" fill="#607675" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">Create account</text>
@@ -54,33 +54,45 @@
   <path d="M649 256L656 263L668 250" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="688" y="264" fill="#164A47" font-size="22" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">SMS Consent Required</text>
 
-  <rect x="620" y="310" width="616" height="218" rx="14" fill="#FBFEFD" stroke="#D5E6E1"/>
+  <rect x="620" y="310" width="616" height="244" rx="14" fill="#FBFEFD" stroke="#D5E6E1"/>
   <rect x="646" y="336" width="28" height="28" rx="6" fill="#0F766E"/>
   <path d="M652 349L659 356L668 343" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="688" y="356" fill="#1C3A39" font-size="20" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    I agree to receive SMS text messages from Oz Health for
+  <text x="688" y="354" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+    I agree to receive SMS text messages from Oz Health.
   </text>
-  <text x="688" y="386" fill="#1C3A39" font-size="20" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    appointment reminders, lab results, and care alerts.
+  <text x="688" y="378" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+    For appointment reminders, lab results, and care alerts.
   </text>
-  <text x="688" y="416" fill="#1C3A39" font-size="20" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    Message frequency: up to 5 msgs/week. Message and data
+  <text x="688" y="402" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+    Message frequency: up to 5 msgs/week.
   </text>
-  <text x="688" y="446" fill="#1C3A39" font-size="20" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    rates may apply. Reply STOP to unsubscribe. Reply HELP for help.
+  <text x="688" y="426" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+    Message and data rates may apply.
   </text>
-
-  <rect x="620" y="550" width="616" height="106" rx="14" fill="#F6FAFB" stroke="#D5E1E5"/>
-  <text x="646" y="590" fill="#31595C" font-size="19" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    Terms: https://ozehr.com/terms
+  <text x="688" y="450" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+    Reply STOP to unsubscribe.
   </text>
-  <text x="646" y="623" fill="#31595C" font-size="19" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    Privacy: https://ozehr.com/privacy
+  <text x="688" y="474" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+    Reply HELP for help.
   </text>
 
-  <rect x="620" y="680" width="616" height="68" rx="14" fill="#F4FBF8" stroke="#CFE5DD"/>
-  <text x="646" y="722" fill="#1C4E4A" font-size="19" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
-    Post-opt-in action: send immediate confirmation SMS to patient mobile number.
+  <rect x="620" y="566" width="616" height="110" rx="14" fill="#F6FAFB" stroke="#D5E1E5"/>
+  <text x="646" y="604" fill="#31595C" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+    Terms: https://ozehr.com/terms.html
+  </text>
+  <text x="646" y="634" fill="#31595C" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+    Privacy: https://ozehr.com/privacy.html
+  </text>
+
+  <rect x="620" y="686" width="616" height="90" rx="14" fill="#F4FBF8" stroke="#CFE5DD"/>
+  <text x="646" y="716" fill="#1C4E4A" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
+    Post-opt-in action:
+  </text>
+  <text x="646" y="740" fill="#1C4E4A" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
+    Send immediate confirmation SMS
+  </text>
+  <text x="646" y="764" fill="#1C4E4A" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
+    to patient mobile number.
   </text>
 
   <text x="86" y="42" fill="#456261" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system">
