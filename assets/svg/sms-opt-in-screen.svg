@@ -57,31 +57,34 @@
   <rect x="620" y="310" width="616" height="244" rx="14" fill="#FBFEFD" stroke="#D5E6E1"/>
   <rect x="646" y="336" width="28" height="28" rx="6" fill="#0F766E"/>
   <path d="M652 349L659 356L668 343" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="688" y="354" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    I agree to receive SMS text messages from Oz Health.
+  <text x="688" y="350" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+    By checking this box, I consent to receive
   </text>
-  <text x="688" y="378" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    For appointment reminders, lab results, and care alerts.
+  <text x="688" y="374" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+    SMS text messages from Oz Health for
   </text>
-  <text x="688" y="402" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+  <text x="688" y="398" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+    appointment reminders, lab results, and care alerts.
+  </text>
+  <text x="688" y="422" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
     Message frequency: up to 5 msgs/week.
   </text>
-  <text x="688" y="426" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+  <text x="688" y="446" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
     Message and data rates may apply.
   </text>
-  <text x="688" y="450" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+  <text x="688" y="470" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
     Reply STOP to unsubscribe.
   </text>
-  <text x="688" y="474" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
+  <text x="688" y="494" fill="#1C3A39" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
     Reply HELP for help.
   </text>
 
   <rect x="620" y="566" width="616" height="110" rx="14" fill="#F6FAFB" stroke="#D5E1E5"/>
   <text x="646" y="604" fill="#31595C" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    Terms: https://ozehr.com/terms.html
+    Terms: https://ozehr.com/terms
   </text>
   <text x="646" y="634" fill="#31595C" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    Privacy: https://ozehr.com/privacy.html
+    Privacy: https://ozehr.com/privacy
   </text>
 
   <rect x="620" y="686" width="616" height="90" rx="14" fill="#F4FBF8" stroke="#CFE5DD"/>

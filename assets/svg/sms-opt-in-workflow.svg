@@ -62,8 +62,9 @@
   <text x="981" y="373" fill="#FFFFFF" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">3</text>
   <text x="1042" y="373" fill="#0C1F1F" font-size="24" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">Required consent</text>
   <text x="958" y="410" fill="#4B6161" font-size="19" font-family="ui-sans-serif, system-ui, -apple-system">
-    <tspan x="958" dy="0">Checkbox contains Message</tspan>
-    <tspan x="958" dy="29">frequency, rates disclosure,</tspan>
+    <tspan x="958" dy="0">Checkbox states consent</tspan>
+    <tspan x="958" dy="29">to receive SMS messages,</tspan>
+    <tspan x="958" dy="29">plus frequency, rates,</tspan>
     <tspan x="958" dy="29">STOP and HELP instructions.</tspan>
   </text>
 
@@ -102,8 +103,8 @@
 
   <rect x="84" y="748" width="1230" height="124" rx="18" fill="#F4FBF8" stroke="#CBE7DF"/>
   <text x="114" y="780" fill="#164A47" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
-    <tspan x="114" dy="0">Consent text includes message frequency (up to 5 msgs/week), message and data rates,</tspan>
-    <tspan x="114" dy="26">STOP to unsubscribe, and HELP for help.</tspan>
+    <tspan x="114" dy="0">Consent text states consent to receive SMS text messages from Oz Health.</tspan>
+    <tspan x="114" dy="26">Includes frequency (up to 5 msgs/week), message and data rates, STOP, and HELP.</tspan>
   </text>
   <text x="114" y="848" fill="#2E5A57" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system">
     Public evidence page: https://ozehr.com/sampleoptin.html
