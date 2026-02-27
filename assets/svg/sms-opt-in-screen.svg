@@ -45,40 +45,42 @@
   <rect x="164" y="598" width="356" height="56" rx="14" fill="#DDE9E6" stroke="#CCD9D5"/>
   <text x="230" y="634" fill="#607675" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">Create account</text>
   <text x="164" y="688" fill="#7A8F8F" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system">
-    Submit disabled until SMS consent is checked.
+    Registration can continue without SMS consent.
   </text>
 
   <rect x="588" y="184" width="680" height="594" rx="22" fill="#FFFFFF" stroke="#D8E3E0"/>
   <rect x="620" y="226" width="616" height="60" rx="14" fill="#F0F8F5" stroke="#CDE4DC"/>
   <circle cx="658" cy="256" r="16" fill="url(#brand)"/>
   <path d="M649 256L656 263L668 250" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="688" y="264" fill="#164A47" font-size="22" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">Explicit SMS Consent Required</text>
+  <text x="688" y="264" fill="#164A47" font-size="22" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">SMS Consent (Optional)</text>
 
   <rect x="620" y="310" width="616" height="244" rx="14" fill="#FBFEFD" stroke="#D5E6E1"/>
-  <rect x="646" y="336" width="28" height="28" rx="6" fill="#0F766E"/>
-  <path d="M652 349L659 356L668 343" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="646" y="336" width="28" height="28" rx="6" fill="#FFFFFF" stroke="#0F766E" stroke-width="2"/>
   
-  <text x="688" y="352" fill="#0C1F1F" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
-    By checking this box, you expressly consent to receive
+  <text x="688" y="352" fill="#0C1F1F" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
+    I agree to receive SMS text messages from Oz Health for
   </text>
-  <text x="688" y="376" fill="#0C1F1F" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
-    SMS text messages from Oz Health at the mobile number
+  <text x="688" y="374" fill="#0C1F1F" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
+    appointment reminders, lab result notifications, and care alerts.
   </text>
-  <text x="688" y="400" fill="#0C1F1F" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
-    provided above. Messages include appointment reminders,
+  <text x="688" y="396" fill="#0C1F1F" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
+    Message frequency: up to 5 messages per week.
   </text>
-  <text x="688" y="424" fill="#0C1F1F" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
-    lab results, and care alerts.
+  <text x="688" y="418" fill="#0C1F1F" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
+    Message and data rates may apply.
   </text>
   
-  <text x="688" y="460" fill="#2E4E4E" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system">
-    • Message frequency: Up to 5 messages per week.
+  <text x="688" y="448" fill="#2E4E4E" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system">
+    Reply STOP to unsubscribe.
   </text>
-  <text x="688" y="484" fill="#2E4E4E" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system">
-    • Message and data rates may apply.
+  <text x="688" y="470" fill="#2E4E4E" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system">
+    Reply HELP for help.
   </text>
-  <text x="688" y="508" fill="#2E4E4E" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system">
-    • Reply STOP to cancel or HELP for assistance.
+  <text x="688" y="492" fill="#2E4E4E" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system">
+    Consent is not required to create account or receive care.
+  </text>
+  <text x="688" y="514" fill="#2E4E4E" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system">
+    Unchecked = no SMS. Checked = SMS reminders and alerts.
   </text>
 
   <rect x="620" y="580" width="616" height="86" rx="14" fill="#F6FAFB" stroke="#D5E1E5"/>
@@ -94,13 +96,13 @@
     Post-opt-in action:
   </text>
   <text x="646" y="740" fill="#1C4E4A" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    Send immediate confirmation SMS text message
+    Confirmation SMS sent
   </text>
   <text x="646" y="764" fill="#1C4E4A" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    to the newly registered patient mobile number.
+    when patient opts in.
   </text>
 
   <text x="86" y="42" fill="#456261" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    Branded screenshot artifact for AWS toll-free registration opt-in validation - Explicit Language Update
+    Branded screenshot artifact for AWS toll-free registration opt-in validation - Optional Consent Update
   </text>
 </svg>

@@ -25,7 +25,7 @@
 
   <text x="84" y="200" fill="#0C1F1F" font-size="46" font-family="ui-serif, Georgia, serif" font-weight="700">SMS Opt-In Workflow</text>
   <text x="84" y="244" fill="#2E4E4E" font-size="24" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="600">
-    US Toll-Free Registration Evidence (Updated Opt-In Language)
+    US Toll-Free Registration Evidence (Web Form, Optional Consent)
   </text>
   <text x="84" y="276" fill="#4B6161" font-size="20" font-family="ui-sans-serif, system-ui, -apple-system">
     Public links: app.ozehr.com | ozehr.com/terms | ozehr.com/privacy
@@ -60,21 +60,21 @@
 
   <rect x="958" y="352" width="68" height="30" rx="15" fill="url(#brand)"/>
   <text x="981" y="373" fill="#FFFFFF" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">3</text>
-  <text x="1042" y="373" fill="#0C1F1F" font-size="22" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">Explicit Consent</text>
+  <text x="1042" y="373" fill="#0C1F1F" font-size="22" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">Optional SMS consent</text>
   <text x="958" y="410" fill="#4B6161" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system">
-    <tspan x="958" dy="0">Checkbox explicitly establishes</tspan>
-    <tspan x="958" dy="28">consent for SMS text messages.</tspan>
-    <tspan x="958" dy="28">Details message frequency (5/wk),</tspan>
-    <tspan x="958" dy="28">rates, and STOP/HELP commands.</tspan>
+    <tspan x="958" dy="0">Unchecked checkbox by default.</tspan>
+    <tspan x="958" dy="28">Patient may opt in to SMS text</tspan>
+    <tspan x="958" dy="28">messages for reminders, lab</tspan>
+    <tspan x="958" dy="28">result notifications, and alerts.</tspan>
   </text>
 
   <rect x="110" y="554" width="68" height="30" rx="15" fill="url(#brand)"/>
   <text x="133" y="575" fill="#FFFFFF" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">4</text>
-  <text x="194" y="575" fill="#0C1F1F" font-size="22" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">Submission blocked</text>
+  <text x="194" y="575" fill="#0C1F1F" font-size="22" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">Registration continues</text>
   <text x="110" y="612" fill="#4B6161" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system">
-    <tspan x="110" dy="0">Registration submit remains</tspan>
-    <tspan x="110" dy="28">strictly disabled until the</tspan>
-    <tspan x="110" dy="28">SMS consent box is checked.</tspan>
+    <tspan x="110" dy="0">Consent is not required to</tspan>
+    <tspan x="110" dy="28">create account or receive care.</tspan>
+    <tspan x="110" dy="28">SMS is sent only after opt-in.</tspan>
   </text>
 
   <rect x="534" y="554" width="68" height="30" rx="15" fill="url(#brand)"/>
@@ -88,10 +88,10 @@
 
   <rect x="958" y="554" width="68" height="30" rx="15" fill="url(#brand)"/>
   <text x="981" y="575" fill="#FFFFFF" font-size="16" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">6</text>
-  <text x="1042" y="575" fill="#0C1F1F" font-size="22" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">Ongoing transparency</text>
+  <text x="1042" y="575" fill="#0C1F1F" font-size="22" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">Ongoing controls</text>
   <text x="958" y="612" fill="#4B6161" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system">
     <tspan x="958" dy="0">All subsequent SMS include</tspan>
-    <tspan x="958" dy="28">STOP and HELP commands.</tspan>
+    <tspan x="958" dy="28">STOP and HELP instructions.</tspan>
     <tspan x="958" dy="28">Terms &amp; Privacy are verifiable.</tspan>
   </text>
 
@@ -103,8 +103,8 @@
 
   <rect x="84" y="748" width="1230" height="124" rx="18" fill="#F4FBF8" stroke="#CBE7DF"/>
   <text x="114" y="780" fill="#164A47" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">
-    <tspan x="114" dy="0">Revised Consent Language explicitly states: "I expressly consent to receive SMS text messages from Oz Health..."</tspan>
-    <tspan x="114" dy="26">Clearly enumerates exact message frequency (up to 5 msgs/week), message and data rates, STOP, and HELP instructions.</tspan>
+    <tspan x="114" dy="0">Submission text includes: "Message frequency: up to 5 messages per week. Message and data rates may apply."</tspan>
+    <tspan x="114" dy="26">Also includes: "Reply STOP to unsubscribe. Reply HELP for help." Consent is not required.</tspan>
   </text>
   <text x="114" y="848" fill="#2E5A57" font-size="17" font-family="ui-sans-serif, system-ui, -apple-system">
     Public evidence page (matching these artifacts): https://ozehr.com/sampleoptin.html
