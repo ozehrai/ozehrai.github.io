@@ -127,7 +127,7 @@
             <div class="panel reveal" id="contact-form">
               <span class="pill">Send a message</span>
               <h2 class="h2" style="margin-top:10px">Contact form</h2>
-              <p class="muted">This form is a lightweight placeholder that opens your email client. Swap to a real form endpoint when ready.</p>
+              <p class="muted">This form sends directly to <a href="mailto:contact@ozehr.com">contact@ozehr.com</a>. We usually respond within one business day.</p>
 
               <form class="form" id="contactForm">
                 <div class="field">
@@ -157,6 +157,7 @@
                 </div>
 
                 <button class="btn primary" type="submit">Send message</button>
+                <p id="contactFormStatus" class="muted" style="margin:4px 0 0; font-size:13px;" aria-live="polite"></p>
               </form>
 
               <div class="notice" style="margin-top:12px">
@@ -177,8 +178,8 @@
                 </div>
                 <div class="item">
                   <div>
-                    <strong>Phone (placeholder)</strong>
-                    <p><a href="tel:+18885550123">(888) 555-0123</a></p>
+                    <strong>Phone</strong>
+                    <p><a href="tel:+16462045726">(646) 204 5726</a></p>
                   </div>
                 </div>
                 <div class="item">
@@ -264,19 +265,28 @@
 
         <div class="footer-bottom">
           <small>Copyright <span id="year"></span> OzEHR. All rights reserved.</small>
-          <small>Phone (placeholder): <a href="tel:+18885550123">(888) 555-0123</a></small>
+          <small>Phone: <a href="tel:+16462045726">(646) 204 5726</a></small>
         </div>
       </div>
 
       <script>
         document.getElementById('year').textContent = String(new Date().getFullYear());
 
-        // Lightweight placeholder submission -> opens a mailto: link.
+        // Sends contact submissions to contact@ozehr.com.
         (function () {
           var form = document.getElementById('contactForm');
           if (!form) return;
+          var submitButton = form.querySelector('button[type="submit"]');
+          var status = document.getElementById('contactFormStatus');
+          var defaultButtonLabel = submitButton ? submitButton.textContent : '';
 
-          form.addEventListener('submit', function (e) {
+          function setStatus(message, isError) {
+            if (!status) return;
+            status.textContent = message || '';
+            status.style.color = isError ? 'var(--danger)' : 'var(--muted)';
+          }
+
+          form.addEventListener('submit', async function (e) {
             e.preventDefault();
             var name = (document.getElementById('name').value || '').trim();
             var email = (document.getElementById('email').value || '').trim();
@@ -290,12 +300,55 @@
               'Topic: ' + topic + '\n\n' +
               message;
 
-            var href =
-              'mailto:contact@ozehr.com' +
-              '?subject=' + encodeURIComponent(subject) +
-              '&body=' + encodeURIComponent(body);
+            if (submitButton) {
+              submitButton.disabled = true;
+              submitButton.textContent = 'Sending...';
+            }
+            setStatus('Sending your message...', false);
 
-            window.location.href = href;
+            try {
+              var response = await fetch('https://formsubmit.co/ajax/contact@ozehr.com', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                  Accept: 'application/json'
+                },
+                body: JSON.stringify({
+                  name: name,
+                  email: email,
+                  topic: topic,
+                  message: message,
+                  _subject: subject,
+                  _template: 'table',
+                  _captcha: 'false'
+                })
+              });
+
+              var result = await response.json().catch(function () {
+                return {};
+              });
+
+              if (!response.ok || result.success === 'false') {
+                throw new Error('submit_failed');
+              }
+
+              form.reset();
+              setStatus('Message sent. We will follow up at ' + email + '.', false);
+            } catch (err) {
+              setStatus('Automatic send failed. Opening your email app as fallback.', true);
+
+              var href =
+                'mailto:contact@ozehr.com' +
+                '?subject=' + encodeURIComponent(subject) +
+                '&body=' + encodeURIComponent(body);
+
+              window.location.href = href;
+            } finally {
+              if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = defaultButtonLabel || 'Send message';
+              }
+            }
           });
         })();
       </script>
