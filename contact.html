@@ -293,6 +293,28 @@
             status.style.color = isError ? 'var(--danger)' : 'var(--muted)';
           }
 
+          function setHiddenField(name, value) {
+            var field = form.querySelector('input[name="' + name + '"]');
+            if (!field) {
+              field = document.createElement('input');
+              field.type = 'hidden';
+              field.name = name;
+              form.appendChild(field);
+            }
+            field.value = value;
+          }
+
+          function submitBackupForm(subject) {
+            setHiddenField('_subject', subject);
+            setHiddenField('_template', 'table');
+            setHiddenField('_captcha', 'false');
+            setHiddenField('_next', window.location.href.split('#')[0] + '?sent=1');
+            form.setAttribute('action', 'https://formsubmit.co/contact@ozehr.com');
+            form.setAttribute('method', 'POST');
+            form.setAttribute('target', '_self');
+            form.submit();
+          }
+
           async function postJson(url, payload) {
             var response = await fetch(url, {
               method: 'POST',
@@ -371,14 +393,20 @@
 
               throw new Error('all_delivery_paths_failed');
             } catch (err) {
-              setStatus('Automatic send failed. Opening your email app as fallback.', true);
+              try {
+                setStatus('Automatic API delivery failed. Sending via backup form...', false);
+                submitBackupForm(subject);
+                return;
+              } catch (backupErr) {
+                setStatus('Automatic send failed. Opening your email app as fallback.', true);
 
-              var href =
-                'mailto:contact@ozehr.com' +
-                '?subject=' + encodeURIComponent(subject) +
-                '&body=' + encodeURIComponent(body);
+                var href =
+                  'mailto:contact@ozehr.com' +
+                  '?subject=' + encodeURIComponent(subject) +
+                  '&body=' + encodeURIComponent(body);
 
-              window.location.href = href;
+                window.location.href = href;
+              }
             } finally {
               if (submitButton) {
                 submitButton.disabled = false;
