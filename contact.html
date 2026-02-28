@@ -277,9 +277,10 @@
       <script>
         document.getElementById('year').textContent = String(new Date().getFullYear());
 
-        // Sends contact submissions to contact@ozehr.com through the Cloudflare Worker API.
+        // Sends contact submissions to contact@ozehr.com with layered delivery fallback.
         (function () {
           var CONTACT_API_URL = 'https://api.ozehr.com/api/contact';
+          var BACKUP_FORMSUBMIT_URL = 'https://formsubmit.co/ajax/contact@ozehr.com';
           var form = document.getElementById('contactForm');
           if (!form) return;
           var submitButton = form.querySelector('button[type="submit"]');
@@ -290,6 +291,27 @@
             if (!status) return;
             status.textContent = message || '';
             status.style.color = isError ? 'var(--danger)' : 'var(--muted)';
+          }
+
+          async function postJson(url, payload) {
+            var response = await fetch(url, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json'
+              },
+              body: JSON.stringify(payload)
+            });
+
+            var result = await response.json().catch(function () {
+              return {};
+            });
+
+            return {
+              ok: response.ok,
+              status: response.status,
+              result: result
+            };
           }
 
           form.addEventListener('submit', async function (e) {
@@ -314,32 +336,40 @@
             setStatus('Sending your message...', false);
 
             try {
-              var response = await fetch(CONTACT_API_URL, {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                  Accept: 'application/json'
-                },
-                body: JSON.stringify({
-                  name: name,
-                  email: email,
-                  topic: topic,
-                  message: message,
-                  honeypot: honeypot,
-                  page: window.location.href
-                })
+              var primary = await postJson(CONTACT_API_URL, {
+                name: name,
+                email: email,
+                topic: topic,
+                message: message,
+                honeypot: honeypot,
+                page: window.location.href
               });
 
-              var result = await response.json().catch(function () {
-                return {};
-              });
-
-              if (!response.ok || result.ok !== true) {
-                throw new Error('submit_failed');
+              if (primary.ok && primary.result.ok === true) {
+                form.reset();
+                setStatus('Message sent. We will follow up at ' + email + '.', false);
+                return;
               }
 
-              form.reset();
-              setStatus('Message sent. We will follow up at ' + email + '.', false);
+              setStatus('Primary delivery unavailable. Retrying via backup channel...', false);
+
+              var backup = await postJson(BACKUP_FORMSUBMIT_URL, {
+                name: name,
+                email: email,
+                topic: topic,
+                message: message,
+                _subject: subject,
+                _template: 'table',
+                _captcha: 'false'
+              });
+
+              if (backup.ok && backup.result.success !== 'false') {
+                form.reset();
+                setStatus('Message sent. We will follow up at ' + email + '.', false);
+                return;
+              }
+
+              throw new Error('all_delivery_paths_failed');
             } catch (err) {
               setStatus('Automatic send failed. Opening your email app as fallback.', true);
 
