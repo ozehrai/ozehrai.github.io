@@ -140,6 +140,11 @@
                   <input id="email" name="email" type="email" autocomplete="email" required />
                 </div>
 
+                <div class="field" aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
+                  <label for="website">Website</label>
+                  <input id="website" name="website" tabindex="-1" autocomplete="off" />
+                </div>
+
                 <div class="field">
                   <label for="topic">Topic</label>
                   <select id="topic" name="topic" required>
@@ -272,8 +277,9 @@
       <script>
         document.getElementById('year').textContent = String(new Date().getFullYear());
 
-        // Sends contact submissions to contact@ozehr.com.
+        // Sends contact submissions to contact@ozehr.com through the Cloudflare Worker API.
         (function () {
+          var CONTACT_API_URL = 'https://api.ozehr.com/api/contact';
           var form = document.getElementById('contactForm');
           if (!form) return;
           var submitButton = form.querySelector('button[type="submit"]');
@@ -292,6 +298,7 @@
             var email = (document.getElementById('email').value || '').trim();
             var topic = (document.getElementById('topic').value || '').trim();
             var message = (document.getElementById('message').value || '').trim();
+            var honeypot = (document.getElementById('website').value || '').trim();
 
             var subject = 'OzEHR: ' + (topic || 'Contact');
             var body =
@@ -307,7 +314,7 @@
             setStatus('Sending your message...', false);
 
             try {
-              var response = await fetch('https://formsubmit.co/ajax/contact@ozehr.com', {
+              var response = await fetch(CONTACT_API_URL, {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',
@@ -318,9 +325,8 @@
                   email: email,
                   topic: topic,
                   message: message,
-                  _subject: subject,
-                  _template: 'table',
-                  _captcha: 'false'
+                  honeypot: honeypot,
+                  page: window.location.href
                 })
               });
 
@@ -328,7 +334,7 @@
                 return {};
               });
 
-              if (!response.ok || result.success === 'false') {
+              if (!response.ok || result.ok !== true) {
                 throw new Error('submit_failed');
               }
 

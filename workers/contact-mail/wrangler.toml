@@ -1,0 +1,6 @@
+name = "ozehr-contact-mail"
+main = "src/index.ts"
+compatibility_date = "2026-02-28"
+
+# Configure routing in Cloudflare dashboard or with `wrangler deploy --routes`.
+# Expected production endpoint: https://api.ozehr.com/api/contact

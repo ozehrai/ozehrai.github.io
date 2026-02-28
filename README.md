@@ -4,10 +4,9 @@ Static, customer-facing marketing website for **OzEHR** (college health EHR).
 
 ## Preview locally
 
-From the repo root:
+From this project directory:
 
 ```bash
-cd ozehrcom
 python3 -m http.server 8080
 ```
 
@@ -20,22 +19,30 @@ Note: the site uses relative links, so you can preview either via a local server
 ## Site map
 
 - `/index.html` (Home)
-- `/pages/product.html`
-- `/pages/features.html`
-- `/pages/pricing.html`
-- `/pages/security.html`
-- `/pages/resources.html`
-- `/pages/about.html`
-- `/pages/contact.html`
-- `/pages/privacy.html` (placeholder)
-- `/pages/terms.html` (placeholder)
+- `/product.html`
+- `/features.html`
+- `/pricing.html`
+- `/security.html`
+- `/resources.html`
+- `/about.html`
+- `/contact.html`
+- `/privacy.html`
+- `/terms.html`
 
-## Placeholders to replace
+## Contact form delivery
 
-- Phone number: `(888) 555-0123`
-- Email: `contact@ozehr.com`
-- Pricing: pages show `Custom quote` by default.
-- Privacy/Terms: placeholders only; replace with counsel-approved text.
+The contact form posts to:
+
+- `https://api.ozehr.com/api/contact`
+
+This endpoint is implemented in:
+
+- `workers/contact-mail`
+
+Worker env vars:
+
+- `RESEND_API_KEY` (preferred)
+- `resend_key` (fallback compatibility with local `.env.local`)
 
 ## Image generation (optional)
 
