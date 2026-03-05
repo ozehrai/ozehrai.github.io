@@ -1,3 +1,14 @@
 <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <path d="M50 20L85 80H15L50 20Z" fill="#185B57"/>
+  <defs>
+    <linearGradient id="mark" x1="30" y1="16" x2="70" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#109087" />
+      <stop offset="0.58" stop-color="#0D6F69" />
+      <stop offset="1" stop-color="#103741" />
+    </linearGradient>
+  </defs>
+
+  <path
+    d="M49.86 13.64C50.66 11.88 53.18 11.88 53.98 13.64L83.54 78.76C84.29 80.42 83.08 82.25 81.26 82.25H22.58C20.76 82.25 19.55 80.42 20.3 78.76L49.86 13.64Z"
+    fill="url(#mark)"
+  />
 </svg>

@@ -1,85 +1,95 @@
-<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Doctor seeing a student">
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Clinician workflow illustration showing AI-assisted charting and review panels">
   <defs>
-    <linearGradient id="bg" x1="160" y1="140" x2="1040" y2="820" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F766E" stop-opacity="0.16"/>
-      <stop offset="0.45" stop-color="#F4E4A8" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#D8F0D9" stop-opacity="0.28"/>
+    <linearGradient id="bg" x1="166" y1="118" x2="1036" y2="824" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D7B72" stop-opacity="0.18" />
+      <stop offset="0.46" stop-color="#F1E2B3" stop-opacity="0.34" />
+      <stop offset="1" stop-color="#DAEDE3" stop-opacity="0.3" />
     </linearGradient>
-    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#0F766E"/>
-      <stop offset="1" stop-color="#185B57"/>
+    <linearGradient id="brand" x1="378" y1="164" x2="1012" y2="716" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#119087" />
+      <stop offset="1" stop-color="#113741" />
+    </linearGradient>
+    <linearGradient id="surface" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="1" stop-color="#F7FBFA" stop-opacity="0.88" />
     </linearGradient>
     <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0C1F1F" flood-opacity="0.12"/>
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0B2027" flood-opacity="0.12" />
     </filter>
   </defs>
 
-  <path d="M198 218C280 86 460 64 600 112C770 170 778 54 920 92C1078 136 1162 304 1112 466C1070 602 1160 668 1078 776C986 894 770 860 616 810C486 768 296 792 218 658C144 520 136 354 198 218Z" fill="url(#bg)"/>
+  <path d="M194 218C278 84 458 62 602 110C768 166 778 52 924 92C1080 136 1162 304 1110 468C1068 606 1156 676 1072 780C978 896 768 860 610 808C478 764 294 794 216 658C144 528 134 354 194 218Z" fill="url(#bg)" />
 
-  <!-- Exam room cards -->
+  <g opacity="0.68" stroke="#0C2631" stroke-opacity="0.12" stroke-width="3" stroke-linecap="round">
+    <path d="M260 296C364 264 452 280 544 340" />
+    <path d="M544 340C670 388 766 384 882 318" />
+    <path d="M404 714C532 660 662 662 794 726" />
+  </g>
+
   <g filter="url(#shadow)">
-    <rect x="148" y="154" width="390" height="188" rx="34" fill="rgba(255,255,255,0.82)" stroke="rgba(12,31,31,0.10)"/>
-    <rect x="186" y="200" width="310" height="18" rx="9" fill="rgba(12,31,31,0.12)"/>
-    <rect x="186" y="230" width="260" height="14" rx="7" fill="rgba(12,31,31,0.10)"/>
-    <rect x="186" y="256" width="290" height="14" rx="7" fill="rgba(12,31,31,0.10)"/>
-    <rect x="186" y="284" width="160" height="14" rx="7" fill="rgba(12,31,31,0.10)"/>
-    <rect x="386" y="270" width="110" height="44" rx="22" fill="rgba(216,240,217,0.72)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="390" y="138" width="628" height="548" rx="42" fill="url(#surface)" stroke="#0C2631" stroke-opacity="0.1" stroke-width="2" />
+    <rect x="420" y="172" width="568" height="58" rx="24" fill="#FFFFFF" fill-opacity="0.84" stroke="#0C2631" stroke-opacity="0.08" stroke-width="2" />
+    <circle cx="452" cy="201" r="7" fill="#C36E61" fill-opacity="0.72" />
+    <circle cx="474" cy="201" r="7" fill="#E5C36E" fill-opacity="0.88" />
+    <circle cx="496" cy="201" r="7" fill="#77B58D" fill-opacity="0.88" />
+    <rect x="532" y="191" width="146" height="16" rx="8" fill="#0C2631" fill-opacity="0.1" />
+    <rect x="820" y="187" width="128" height="24" rx="12" fill="#EEF7F3" />
+    <rect x="846" y="194" width="76" height="10" rx="5" fill="#113741" fill-opacity="0.36" />
 
-    <rect x="600" y="170" width="438" height="212" rx="34" fill="rgba(255,255,255,0.80)" stroke="rgba(12,31,31,0.10)"/>
-    <rect x="638" y="216" width="260" height="18" rx="9" fill="rgba(12,31,31,0.12)"/>
-    <rect x="638" y="246" width="312" height="14" rx="7" fill="rgba(12,31,31,0.10)"/>
-    <rect x="638" y="272" width="286" height="14" rx="7" fill="rgba(12,31,31,0.10)"/>
-    <rect x="638" y="310" width="340" height="12" rx="6" fill="rgba(12,31,31,0.10)"/>
-    <rect x="638" y="310" width="212" height="12" rx="6" fill="url(#brand)"/>
+    <rect x="420" y="250" width="160" height="404" rx="28" fill="#FFFFFF" fill-opacity="0.88" stroke="#0C2631" stroke-opacity="0.08" stroke-width="2" />
+    <rect x="446" y="284" width="94" height="12" rx="6" fill="#0C2631" fill-opacity="0.12" />
+    <rect x="446" y="308" width="74" height="10" rx="5" fill="#0C2631" fill-opacity="0.08" />
+    <rect x="446" y="338" width="108" height="66" rx="22" fill="#EFF6F4" />
+    <rect x="462" y="360" width="64" height="10" rx="5" fill="#0C2631" fill-opacity="0.1" />
+    <rect x="462" y="378" width="86" height="10" rx="5" fill="#0C2631" fill-opacity="0.08" />
+    <rect x="446" y="426" width="108" height="66" rx="22" fill="#FFFFFF" fill-opacity="0.92" stroke="#0C2631" stroke-opacity="0.08" stroke-width="2" />
+    <rect x="462" y="448" width="56" height="10" rx="5" fill="#0C2631" fill-opacity="0.1" />
+    <rect x="462" y="466" width="78" height="10" rx="5" fill="#0C2631" fill-opacity="0.08" />
+    <rect x="446" y="514" width="108" height="66" rx="22" fill="#FFFFFF" fill-opacity="0.92" stroke="#0C2631" stroke-opacity="0.08" stroke-width="2" />
+    <rect x="462" y="536" width="70" height="10" rx="5" fill="#0C2631" fill-opacity="0.1" />
+    <rect x="462" y="554" width="60" height="10" rx="5" fill="#0C2631" fill-opacity="0.08" />
+    <rect x="446" y="598" width="82" height="30" rx="15" fill="#DCEFE6" />
+
+    <rect x="604" y="250" width="384" height="404" rx="28" fill="#FFFFFF" fill-opacity="0.88" stroke="#0C2631" stroke-opacity="0.08" stroke-width="2" />
+    <rect x="632" y="284" width="146" height="14" rx="7" fill="#0C2631" fill-opacity="0.12" />
+    <rect x="808" y="278" width="148" height="26" rx="13" fill="#EEF7F3" stroke="#0D7B72" stroke-opacity="0.14" stroke-width="2" />
+    <circle cx="830" cy="291" r="6" fill="#0D7B72" />
+    <rect x="844" y="286" width="92" height="10" rx="5" fill="#113741" fill-opacity="0.38" />
+
+    <rect x="632" y="324" width="324" height="124" rx="24" fill="#F8FBFA" stroke="#0C2631" stroke-opacity="0.08" stroke-width="2" />
+    <rect x="658" y="352" width="184" height="12" rx="6" fill="#0C2631" fill-opacity="0.12" />
+    <rect x="658" y="376" width="240" height="10" rx="5" fill="#0C2631" fill-opacity="0.08" />
+    <rect x="658" y="396" width="220" height="10" rx="5" fill="#0C2631" fill-opacity="0.08" />
+    <rect x="658" y="418" width="112" height="10" rx="5" fill="#0D7B72" fill-opacity="0.18" />
+
+    <rect x="632" y="472" width="200" height="148" rx="24" fill="#FFFFFF" fill-opacity="0.92" stroke="#0C2631" stroke-opacity="0.08" stroke-width="2" />
+    <rect x="656" y="498" width="92" height="12" rx="6" fill="#0C2631" fill-opacity="0.12" />
+    <rect x="656" y="522" width="126" height="10" rx="5" fill="#0C2631" fill-opacity="0.08" />
+    <rect x="656" y="550" width="126" height="30" rx="15" fill="#EFF6F4" />
+    <path d="M690 565H748" stroke="#113741" stroke-opacity="0.34" stroke-width="3.5" stroke-linecap="round" />
+    <rect x="656" y="594" width="98" height="10" rx="5" fill="#0C2631" fill-opacity="0.08" />
+
+    <rect x="852" y="472" width="104" height="148" rx="24" fill="url(#brand)" />
+    <rect x="876" y="500" width="56" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.78" />
+    <rect x="876" y="524" width="38" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.54" />
+    <rect x="876" y="554" width="56" height="44" rx="18" fill="#FFFFFF" fill-opacity="0.14" />
+    <path d="M898 566H910" stroke="#FFFFFF" stroke-opacity="0.84" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M904 560V572" stroke="#FFFFFF" stroke-opacity="0.84" stroke-width="3.5" stroke-linecap="round" />
   </g>
 
-  <!-- Exam bed -->
   <g filter="url(#shadow)">
-    <rect x="570" y="606" width="500" height="122" rx="50" fill="rgba(255,255,255,0.78)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
-    <rect x="606" y="638" width="238" height="58" rx="28" fill="rgba(216,240,217,0.52)" stroke="rgba(12,31,31,0.10)"/>
-    <rect x="856" y="638" width="180" height="58" rx="28" fill="rgba(244,228,168,0.44)" stroke="rgba(12,31,31,0.10)"/>
+    <rect x="174" y="250" width="180" height="170" rx="34" fill="url(#surface)" stroke="#0C2631" stroke-opacity="0.1" stroke-width="2" />
+    <rect x="202" y="284" width="94" height="14" rx="7" fill="#0C2631" fill-opacity="0.12" />
+    <rect x="202" y="308" width="118" height="10" rx="5" fill="#0C2631" fill-opacity="0.08" />
+    <rect x="202" y="342" width="124" height="40" rx="20" fill="#EFF6F4" />
+    <rect x="226" y="356" width="76" height="12" rx="6" fill="#113741" fill-opacity="0.3" />
   </g>
 
-  <!-- Doctor -->
   <g filter="url(#shadow)">
-    <circle cx="404" cy="458" r="64" fill="#F4E4A8"/>
-
-    <path d="M304 716C322 612 374 558 448 558C522 558 574 612 592 716" fill="rgba(255,255,255,0.84)"/>
-    <path d="M304 716C322 612 374 558 448 558C522 558 574 612 592 716" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
-
-    <path d="M370 606C380 578 404 560 432 560H464C492 560 516 578 526 606" fill="rgba(15,118,110,0.18)"/>
-
-    <!-- Stethoscope -->
-    <path d="M396 590C396 556 430 544 448 566C466 544 500 556 500 590C500 640 448 636 448 676" stroke="#185B57" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="448" cy="690" r="14" fill="rgba(216,240,217,0.78)" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
-    <circle cx="448" cy="690" r="6" fill="#185B57" fill-opacity="0.65"/>
-  </g>
-
-  <!-- Student -->
-  <g filter="url(#shadow)">
-    <circle cx="776" cy="486" r="58" fill="#F4E4A8"/>
-    <path d="M706 686C724 602 766 560 820 560C874 560 916 602 934 686" fill="rgba(15,118,110,0.18)"/>
-    <path d="M706 686C724 602 766 560 820 560C874 560 916 602 934 686" stroke="rgba(12,31,31,0.12)" stroke-width="2"/>
-
-    <!-- Backpack strap -->
-    <path d="M796 564C760 592 744 632 744 682" stroke="rgba(12,31,31,0.16)" stroke-width="6" stroke-linecap="round"/>
-    <path d="M844 564C880 592 896 632 896 682" stroke="rgba(12,31,31,0.16)" stroke-width="6" stroke-linecap="round"/>
-
-    <!-- Small note card -->
-    <rect x="830" y="612" width="124" height="72" rx="18" fill="rgba(255,255,255,0.80)" stroke="rgba(12,31,31,0.12)"/>
-    <rect x="850" y="634" width="84" height="10" rx="5" fill="rgba(12,31,31,0.12)"/>
-    <rect x="850" y="654" width="64" height="10" rx="5" fill="rgba(12,31,31,0.10)"/>
-  </g>
-
-  <!-- Small animated sparkles -->
-  <g opacity="0.9">
-    <path d="M1010 516L1022 554L1060 566L1022 578L1010 616L998 578L960 566L998 554L1010 516Z" fill="#0F766E" fill-opacity="0.35"/>
-    <animateTransform attributeName="transform" type="rotate" from="0 1010 566" to="360 1010 566" dur="20s" repeatCount="indefinite"/>
-  </g>
-  <g opacity="0.9">
-    <circle cx="206" cy="600" r="8" fill="#D8F0D9"/>
-    <circle cx="230" cy="580" r="6" fill="#F4E4A8"/>
-    <circle cx="188" cy="572" r="5" fill="#0F766E" fill-opacity="0.4"/>
-    <animateTransform attributeName="transform" type="rotate" from="0 210 586" to="360 210 586" dur="18s" repeatCount="indefinite"/>
+    <circle cx="580" cy="452" r="54" fill="#FFFFFF" fill-opacity="0.9" stroke="#0C2631" stroke-opacity="0.1" stroke-width="2" />
+    <circle cx="580" cy="452" r="26" fill="#0D7B72" fill-opacity="0.14" stroke="#0D7B72" stroke-opacity="0.18" stroke-width="2" />
+    <path d="M565 452H595" stroke="#0D7B72" stroke-width="4" stroke-linecap="round" />
+    <path d="M565 468H588" stroke="#0D7B72" stroke-width="4" stroke-linecap="round" />
+    <path d="M580 437V468" stroke="#0D7B72" stroke-width="4" stroke-linecap="round" />
   </g>
 </svg>
