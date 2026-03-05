@@ -40,7 +40,7 @@
 
   <text x="164" y="474" fill="#446060" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system">Mobile phone</text>
   <rect x="164" y="486" width="356" height="46" rx="12" fill="#FFFFFF" stroke="#D2DDDA"/>
-  <text x="184" y="515" fill="#7B8E8D" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system">(646) 555-0198</text>
+  <text x="184" y="515" fill="#7B8E8D" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system">775-239-9991</text>
 
   <rect x="164" y="598" width="356" height="56" rx="14" fill="#DDE9E6" stroke="#CCD9D5"/>
   <text x="230" y="634" fill="#607675" font-size="18" font-family="ui-sans-serif, system-ui, -apple-system" font-weight="700">Create account</text>
